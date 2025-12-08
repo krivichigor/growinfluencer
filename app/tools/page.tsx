@@ -30,6 +30,7 @@ export default function ToolsPage() {
   return (
     <div className="min-h-screen bg-background">
       <HeroSection
+        section="tools"
         breadcrumbItems={[{ label: "Creator Tools", href: "/tools" }]}
         title="Best Influencer Tools: Reviews & Comparisons"
         description="Curated reviews of 11 essential tools for content creators. Find the perfect apps for scheduling, editing, analytics, and monetization with honest pricing and feature comparisons."
@@ -48,7 +49,7 @@ export default function ToolsPage() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {tools.map((tool) => (
               <Link key={tool.slug} href={`/tools/${tool.slug}`} className="group">
-                <Card className="h-full transition-all hover:shadow-md hover:border-primary/50">
+                <Card className="h-full transition-all hover:shadow-md hover:border-orange-200 dark:hover:border-orange-800/50">
                   <CardHeader className="pb-2">
                     <div className="flex items-center gap-3">
                       <span className="text-3xl">{tool.emoji}</span>
@@ -56,7 +57,7 @@ export default function ToolsPage() {
                         <Badge variant="outline" className="mb-1 text-xs">
                           {tool.category}
                         </Badge>
-                        <CardTitle className="text-lg group-hover:text-primary transition-colors">
+                        <CardTitle className="text-lg group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">
                           {tool.name}
                         </CardTitle>
                       </div>
@@ -69,7 +70,7 @@ export default function ToolsPage() {
                         <Star className="h-3.5 w-3.5 text-yellow-500 fill-yellow-500" />
                         <span className="text-sm font-medium">{tool.rating}</span>
                       </div>
-                      <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                      <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors" />
                     </div>
                   </CardContent>
                 </Card>

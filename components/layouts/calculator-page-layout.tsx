@@ -33,11 +33,12 @@ export function CalculatorPageLayout({ meta, children }: CalculatorPageLayoutPro
 
       <div className="min-h-screen bg-background">
         {/* Hero */}
-        <section className="border-b border-border bg-gradient-to-b from-muted/50 to-background py-10 md:py-14">
-          <div className="container mx-auto px-4">
+        <section className="relative border-b border-border py-10 md:py-14 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-cyan-50/50 to-blue-50/50 dark:from-cyan-950/10 dark:to-blue-950/10" />
+          <div className="container mx-auto px-4 relative">
             <Link
               href="/calculators"
-              className="mb-4 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="mb-4 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
             >
               <ArrowLeft className="h-4 w-4" />
               {t("nav.calculators")}
@@ -45,16 +46,18 @@ export function CalculatorPageLayout({ meta, children }: CalculatorPageLayoutPro
 
             <div className="flex items-center gap-4 mb-4">
               <span className="text-5xl">{meta.emoji}</span>
-              <h1 className="text-3xl md:text-4xl font-bold text-foreground">{meta.name}</h1>
+              <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-600 to-blue-600 dark:from-cyan-400 dark:to-blue-400 bg-clip-text text-transparent">{meta.name}</h1>
             </div>
             <p className="text-lg text-muted-foreground max-w-2xl">{meta.description}</p>
 
             <div className="flex flex-wrap gap-2 mt-4">
-              <Badge variant="default">{meta.primaryKeyword}</Badge>
+              <span className="inline-flex items-center rounded-md border border-border px-2.5 py-0.5 text-xs font-semibold transition-colors">
+                {meta.primaryKeyword}
+              </span>
               {meta.secondaryKeywords.slice(0, 3).map((keyword) => (
-                <Badge key={keyword} variant="outline">
+                <span key={keyword} className="inline-flex items-center rounded-md border border-border px-2.5 py-0.5 text-xs font-semibold transition-colors">
                   {keyword}
-                </Badge>
+                </span>
               ))}
             </div>
           </div>
@@ -66,7 +69,7 @@ export function CalculatorPageLayout({ meta, children }: CalculatorPageLayoutPro
             {/* Calculator Component */}
             <Card>
               <CardHeader>
-                <CardTitle>Calculate Now</CardTitle>
+                <CardTitle className="bg-gradient-to-r from-cyan-600 to-blue-600 dark:from-cyan-400 dark:to-blue-400 bg-clip-text text-transparent">Calculate Now</CardTitle>
               </CardHeader>
               <CardContent>{children}</CardContent>
             </Card>

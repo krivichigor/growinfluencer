@@ -1,0 +1,220 @@
+{
+  "hero": {
+    "badge": "Free Resources for Creators",
+    "title": "home.hero.title",
+    "subtitle": "home.hero.subtitle"
+  },
+  "quickLinks": [
+    {
+      "icon": "Users",
+      "title": "Influencer Types",
+      "description": "Find your creator path",
+      "href": "/influencers",
+      "count": "8 influencers"
+    },
+    {
+      "icon": "Wrench",
+      "title": "Tools",
+      "description": "Essential software reviews",
+      "href": "/tools",
+      "count": "16 tools"
+    },
+    {
+      "icon": "BookOpen",
+      "title": "Guides",
+      "description": "Step-by-step tutorials",
+      "href": "/guides",
+      "count": "5 guides"
+    },
+    {
+      "icon": "Calculator",
+      "title": "Calculators",
+      "description": "Free analytics tools",
+      "href": "/calculators",
+      "count": "5 calculators"
+    },
+    {
+      "icon": "Newspaper",
+      "title": "News",
+      "description": "Industry updates",
+      "href": "/news",
+      "count": "Latest"
+    }
+  ],
+  "platforms": [
+    {
+      "name": "TikTok",
+      "emoji": "🎵",
+      "href": "/influencers/tiktok-creator"
+    },
+    {
+      "name": "YouTube",
+      "emoji": "▶️",
+      "href": "/influencers/youtuber"
+    },
+    {
+      "name": "Instagram",
+      "emoji": "📸",
+      "href": "/influencers/instagram-creator"
+    },
+    {
+      "name": "Twitch",
+      "emoji": "🎮",
+      "href": "/influencers/twitch-streamer"
+    },
+    {
+      "name": "Podcast",
+      "emoji": "🎙️",
+      "href": "/influencers/podcaster"
+    }
+  ],
+  "popularTools": [
+    {
+      "name": "Hootsuite",
+      "emoji": "🦉",
+      "category": "Management",
+      "slug": "hootsuite",
+      "description": "Schedule & manage all social accounts"
+    },
+    {
+      "name": "TubeBuddy",
+      "emoji": "🎬",
+      "category": "YouTube",
+      "slug": "tubebuddy",
+      "description": "YouTube SEO & optimization toolkit"
+    },
+    {
+      "name": "Canva",
+      "emoji": "🎨",
+      "category": "Design",
+      "slug": "canva",
+      "description": "Create stunning visuals & thumbnails"
+    },
+    {
+      "name": "CapCut",
+      "emoji": "✂️",
+      "category": "Editing",
+      "slug": "capcut",
+      "description": "Professional video editing, free"
+    },
+    {
+      "name": "Streamlabs",
+      "emoji": "📡",
+      "category": "Streaming",
+      "slug": "streamlabs",
+      "description": "Stream with alerts & overlays"
+    },
+    {
+      "name": "SocialBlade",
+      "emoji": "📊",
+      "category": "Analytics",
+      "slug": "socialblade",
+      "description": "Track growth & analytics"
+    }
+  ],
+  "calculators": [
+    {
+      "name": "Engagement Rate",
+      "slug": "engagement-rate",
+      "icon": "TrendingUp",
+      "description": "Measure your audience interaction"
+    },
+    {
+      "name": "Collaboration Fee",
+      "slug": "collaboration-fee",
+      "icon": "Target",
+      "description": "Know your worth for brand deals"
+    },
+    {
+      "name": "Sponsored Post ROI",
+      "slug": "sponsored-post-roi",
+      "icon": "Zap",
+      "description": "Calculate campaign returns"
+    },
+    {
+      "name": "Hashtag Reach",
+      "slug": "hashtag-reach",
+      "icon": "Hash",
+      "description": "Estimate hashtag performance"
+    },
+    {
+      "name": "Content Calendar",
+      "slug": "content-calendar",
+      "icon": "Calendar",
+      "description": "Generate your posting schedule"
+    }
+  ],
+  "latestGuides": [
+    {
+      "title": "How to Become an Influencer",
+      "slug": "how-to-become-an-influencer",
+      "emoji": "🚀",
+      "description": "Complete roadmap from zero to creator success"
+    },
+    {
+      "title": "How to Grow on TikTok Fast",
+      "slug": "how-to-grow-on-tiktok",
+      "emoji": "📈",
+      "description": "Proven strategies for rapid TikTok growth"
+    },
+    {
+      "title": "How to Negotiate Brand Deals",
+      "slug": "how-to-negotiate-brand-deals",
+      "emoji": "🤝",
+      "description": "Master sponsorship negotiations like a pro"
+    },
+    {
+      "title": "Create a Content Calendar",
+      "slug": "how-to-create-content-calendar",
+      "emoji": "📅",
+      "description": "Plan consistent content that converts"
+    },
+    {
+      "title": "Best Equipment for Beginners",
+      "slug": "best-equipment-for-beginners",
+      "emoji": "🎥",
+      "description": "Essential gear without breaking the bank"
+    }
+  ],
+  "stats": [
+    {
+      "value": "8",
+      "label": "Creator Types"
+    },
+    {
+      "value": "16",
+      "label": "Tools Reviewed"
+    },
+    {
+      "value": "5",
+      "label": "Guides"
+    },
+    {
+      "value": "5",
+      "label": "Calculators"
+    }
+  ],
+  "sections": {
+    "tools": {
+      "emoji": "🛠️",
+      "title": "Creator Tools",
+      "description": "Curated reviews of essential software for scheduling, editing, analytics, and monetization. Find the right tools to streamline your workflow.",
+      "linkText": "All 16 tools",
+      "linkHref": "/tools"
+    },
+    "calculators": {
+      "emoji": "🧮",
+      "title": "Free Calculators",
+      "description": "Make data-driven decisions with our free tools. Calculate engagement rates, estimate collaboration fees, measure ROI, and plan your content strategy.",
+      "linkText": "All calculators",
+      "linkHref": "/calculators"
+    },
+    "guides": {
+      "emoji": "📚",
+      "title": "In-Depth Guides",
+      "description": "Comprehensive tutorials covering every aspect of content creation. From starting out to scaling your business, learn from proven strategies.",
+      "linkText": "All guides",
+      "linkHref": "/guides"
+    }
+  }
+}

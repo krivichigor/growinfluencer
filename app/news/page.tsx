@@ -27,6 +27,7 @@ export default function NewsPage() {
   return (
     <div className="min-h-screen bg-background">
       <HeroSection
+        section="news"
         breadcrumbItems={[{ label: "Industry News", href: "/news" }]}
         title="Industry News: Platform Updates & Creator Economy Trends"
         description="Stay informed about the latest algorithm changes, monetization updates, and market trends affecting content creators. Knowledge is power in the creator economy."
@@ -37,12 +38,12 @@ export default function NewsPage() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {newsArticles.map((article) => (
               <Link key={article.slug} href={`/news/${article.slug}`} className="group">
-                <Card className="h-full transition-all hover:shadow-md hover:border-primary/50">
+                <Card className="h-full transition-all hover:shadow-md hover:border-emerald-200 dark:hover:border-emerald-800/50">
                   <CardHeader className="pb-2">
                     <Badge variant="secondary" className="w-fit mb-2 text-xs">
                       {article.category}
                     </Badge>
-                    <CardTitle className="text-lg group-hover:text-primary transition-colors line-clamp-2">
+                    <CardTitle className="text-lg group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors line-clamp-2">
                       {article.title}
                     </CardTitle>
                   </CardHeader>
@@ -62,7 +63,7 @@ export default function NewsPage() {
                           {article.readingTime} min
                         </span>
                       </div>
-                      <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                      <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors" />
                     </div>
                   </CardContent>
                 </Card>

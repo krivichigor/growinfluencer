@@ -37,8 +37,9 @@ export function NewsPageLayout({ data }: NewsPageLayoutProps) {
 
       <div className="min-h-screen bg-background">
         {/* Hero */}
-        <section className="border-b border-border bg-gradient-to-b from-muted/50 to-background py-8">
-          <div className="container mx-auto px-4">
+        <section className="relative border-b border-border py-8 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-emerald-50/50 to-teal-50/50 dark:from-emerald-950/10 dark:to-teal-950/10" />
+          <div className="container mx-auto px-4 relative">
             <Breadcrumb
               items={[
                 { label: t("nav.news"), href: "/news" },
@@ -50,7 +51,7 @@ export function NewsPageLayout({ data }: NewsPageLayoutProps) {
               <Badge variant="secondary" className="mb-3">
                 {data.category}
               </Badge>
-              <h1 className="text-2xl md:text-3xl font-bold text-foreground">{data.title}</h1>
+              <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-emerald-400 dark:to-teal-400 bg-clip-text text-transparent">{data.title}</h1>
               <p className="text-muted-foreground mt-1 max-w-2xl">{data.excerpt}</p>
             </div>
 
@@ -66,11 +67,13 @@ export function NewsPageLayout({ data }: NewsPageLayoutProps) {
             </div>
 
             <div className="flex flex-wrap gap-2 mt-4">
-              <Badge variant="default">{data.primaryKeyword}</Badge>
+              <span className="inline-flex items-center rounded-md border border-border px-2.5 py-0.5 text-xs font-semibold transition-colors">
+                {data.primaryKeyword}
+              </span>
               {data.secondaryKeywords.slice(0, 3).map((keyword) => (
-                <Badge key={keyword} variant="outline">
+                <span key={keyword} className="inline-flex items-center rounded-md border border-border px-2.5 py-0.5 text-xs font-semibold transition-colors">
                   {keyword}
-                </Badge>
+                </span>
               ))}
             </div>
           </div>
@@ -81,7 +84,7 @@ export function NewsPageLayout({ data }: NewsPageLayoutProps) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <aside className="lg:col-span-3 order-2 lg:order-1">
               <div className="sticky top-24">
-                <TableOfContents items={tocItems} />
+                <TableOfContents items={tocItems} section="news" />
               </div>
             </aside>
 
@@ -123,8 +126,8 @@ export function NewsPageLayout({ data }: NewsPageLayoutProps) {
                   {data.actionSteps.map((step, i) => (
                     <Card key={i} className="overflow-hidden">
                       <CardHeader className="bg-muted/50 py-3">
-                        <CardTitle className="flex items-start gap-3 text-base">
-                          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-bold">
+                        <CardTitle className="flex items-start gap-3 text-base bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-emerald-400 dark:to-teal-400 bg-clip-text text-transparent">
+                          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-emerald-500 to-teal-500 text-white text-sm font-bold">
                             {i + 1}
                           </span>
                           <span className="pt-0.5">{step.title}</span>

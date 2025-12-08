@@ -41,6 +41,7 @@ export default function InfluencersPage() {
   return (
     <div className="min-h-screen bg-background">
       <HeroSection
+        section="influencers"
         breadcrumbItems={[{ label: "Influencer Types", href: "/influencers" }]}
         title="Types of Influencers: Find Your Creator Path"
         description="Explore 8 different influencer types and discover which content creation style matches your passion, skills, and goals. Each path offers unique opportunities for growth and monetization."
@@ -51,11 +52,11 @@ export default function InfluencersPage() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {influencerTypes.map((type) => (
               <Link key={type.slug} href={`/influencers/${type.slug}`} className="group">
-                <Card className="h-full transition-all hover:shadow-md hover:border-primary/50">
+                <Card className="h-full transition-all hover:shadow-md hover:border-rose-200 dark:hover:border-rose-800/50">
                   <CardHeader className="pb-2">
                     <div className="flex items-center gap-3">
                       <span className="text-3xl">{type.emoji}</span>
-                      <CardTitle className="text-lg group-hover:text-primary transition-colors">{type.name}</CardTitle>
+                      <CardTitle className="text-lg group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors">{type.name}</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent>
@@ -68,7 +69,7 @@ export default function InfluencersPage() {
                       ))}
                     </div>
                     <div className="flex items-center justify-end">
-                      <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                      <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors" />
                     </div>
                   </CardContent>
                 </Card>
@@ -88,7 +89,7 @@ export default function InfluencersPage() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/guides/how-to-become-an-influencer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-rose-500 to-pink-500 text-white rounded-lg hover:shadow-lg transition-all"
             >
               Read Starter Guide
               <ArrowRight className="h-4 w-4" />

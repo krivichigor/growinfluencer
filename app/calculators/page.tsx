@@ -68,6 +68,7 @@ export default function CalculatorsPage() {
   return (
     <div className="min-h-screen bg-background">
       <HeroSection
+        section="calculators"
         breadcrumbItems={[{ label: "Free Calculators", href: "/calculators" }]}
         title="Free Influencer Calculators: Make Data-Driven Decisions"
         description="5 powerful calculators to help you understand your worth, optimize your content strategy, and maximize your earnings as a content creator. 100% free, no sign-up required."
@@ -78,20 +79,20 @@ export default function CalculatorsPage() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {calculators.map((calc) => (
               <Link key={calc.slug} href={`/calculators/${calc.slug}`} className="group">
-                <Card className="h-full transition-all hover:shadow-md hover:border-primary/50">
+                <Card className="h-full transition-all hover:shadow-md hover:border-cyan-200 dark:hover:border-cyan-800/50">
                   <CardHeader className="pb-2">
                     <div className="flex items-center gap-3">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary flex-shrink-0">
-                        <calc.icon className="h-6 w-6" />
+                      <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-cyan-400 to-blue-400 flex-shrink-0">
+                        <calc.icon className="h-6 w-6 text-white" />
                       </div>
-                      <CardTitle className="text-lg group-hover:text-primary transition-colors">{calc.name}</CardTitle>
+                      <CardTitle className="text-lg group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">{calc.name}</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground text-sm mb-4">{calc.description}</p>
                     <div className="flex items-center justify-between">
                       <span className="text-2xl">{calc.emoji}</span>
-                      <span className="inline-flex items-center gap-1 text-sm text-primary font-medium group-hover:underline">
+                      <span className="inline-flex items-center gap-1 text-sm text-cyan-600 dark:text-cyan-400 font-medium group-hover:underline">
                         Try Now
                         <ArrowRight className="h-4 w-4" />
                       </span>

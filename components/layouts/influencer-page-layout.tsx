@@ -46,8 +46,9 @@ export function InfluencerPageLayout({ data }: InfluencerPageLayoutProps) {
       <JsonLd data={faqSchema} />
 
       <div className="min-h-screen bg-background">
-        <section className="border-b border-border bg-gradient-to-b from-muted/50 to-background py-8">
-          <div className="container mx-auto px-4">
+        <section className="relative border-b border-border py-8 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-rose-50/50 to-pink-50/50 dark:from-rose-950/10 dark:to-pink-950/10" />
+          <div className="container mx-auto px-4 relative">
             <Breadcrumb
               items={[
                 { label: t("nav.influencers"), href: "/influencers" },
@@ -58,19 +59,19 @@ export function InfluencerPageLayout({ data }: InfluencerPageLayoutProps) {
             <div className="flex items-center gap-4 mt-4">
               <span className="text-5xl">{data.emoji}</span>
               <div>
-                <h1 className="text-2xl md:text-3xl font-bold text-foreground">{data.name}</h1>
+                <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-rose-600 to-pink-600 dark:from-rose-400 dark:to-pink-400 bg-clip-text text-transparent">{data.name}</h1>
                 <p className="text-muted-foreground mt-1 max-w-2xl">{data.shortDesc}</p>
               </div>
             </div>
 
             <div className="flex flex-wrap gap-2 mt-4">
-              <Badge variant="default" className="bg-primary text-primary-foreground">
+              <span className="inline-flex items-center rounded-md border border-border px-2.5 py-0.5 text-xs font-semibold transition-colors">
                 {data.primaryKeyword}
-              </Badge>
+              </span>
               {data.secondaryKeywords.slice(0, 4).map((keyword) => (
-                <Badge key={keyword} variant="outline">
+                <span key={keyword} className="inline-flex items-center rounded-md border border-border px-2.5 py-0.5 text-xs font-semibold transition-colors">
                   {keyword}
-                </Badge>
+                </span>
               ))}
             </div>
           </div>
@@ -80,16 +81,16 @@ export function InfluencerPageLayout({ data }: InfluencerPageLayoutProps) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <aside className="lg:col-span-3 order-2 lg:order-1">
               <div className="sticky top-24">
-                <TableOfContents items={tocItems} />
+                <TableOfContents items={tocItems} section="influencers" />
                 <Card className="mt-4">
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-sm font-medium flex items-center gap-2">
-                      <Clock className="h-4 w-4" />
+                    <CardTitle className="text-sm font-medium flex items-center gap-2 bg-gradient-to-r from-rose-600 to-pink-600 dark:from-rose-400 dark:to-pink-400 bg-clip-text text-transparent">
+                      <Clock className="h-4 w-4 text-rose-600 dark:text-rose-400" />
                       Reading Time
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-xl font-bold text-primary">12-15 min</p>
+                    <p className="text-xl font-bold bg-gradient-to-r from-rose-600 to-pink-600 dark:from-rose-400 dark:to-pink-400 bg-clip-text text-transparent">12-15 min</p>
                   </CardContent>
                 </Card>
               </div>
@@ -130,8 +131,8 @@ export function InfluencerPageLayout({ data }: InfluencerPageLayoutProps) {
                   {data.howToStart.map((step) => (
                     <Card key={step.step} className="overflow-hidden">
                       <CardHeader className="bg-muted/50 py-3">
-                        <CardTitle className="flex items-start gap-3 text-base">
-                          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-bold">
+                        <CardTitle className="flex items-start gap-3 text-base bg-gradient-to-r from-rose-600 to-pink-600 dark:from-rose-400 dark:to-pink-400 bg-clip-text text-transparent">
+                          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-rose-500 to-pink-500 text-white text-sm font-bold">
                             {step.step}
                           </span>
                           <span className="pt-0.5">{step.title}</span>
@@ -152,9 +153,9 @@ export function InfluencerPageLayout({ data }: InfluencerPageLayoutProps) {
                     <Link key={tool.slug} href={`/tools/${tool.slug}`} className="group">
                       <Card className="h-full transition-all hover:shadow-md hover:border-primary/50">
                         <CardHeader className="pb-2">
-                          <CardTitle className="text-base flex items-center justify-between">
+                          <CardTitle className="text-base flex items-center justify-between bg-gradient-to-r from-rose-600 to-pink-600 dark:from-rose-400 dark:to-pink-400 bg-clip-text text-transparent">
                             {tool.name}
-                            <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                            <ArrowRight className="h-4 w-4 text-rose-600 dark:text-rose-400 group-hover:text-rose-700 dark:group-hover:text-rose-300 transition-colors" />
                           </CardTitle>
                         </CardHeader>
                         <CardContent>
@@ -234,7 +235,7 @@ export function InfluencerPageLayout({ data }: InfluencerPageLayoutProps) {
                 <div className="grid gap-4 md:grid-cols-3">
                   <Card>
                     <CardHeader className="pb-2">
-                      <CardTitle className="text-base">Related Creator Types</CardTitle>
+                      <CardTitle className="text-base bg-gradient-to-r from-rose-600 to-pink-600 dark:from-rose-400 dark:to-pink-400 bg-clip-text text-transparent">Related Creator Types</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-1.5">
@@ -242,7 +243,7 @@ export function InfluencerPageLayout({ data }: InfluencerPageLayoutProps) {
                           <li key={slug}>
                             <Link
                               href={`/influencers/${slug}`}
-                              className="text-primary hover:underline flex items-center gap-2 text-sm"
+                              className="text-rose-600 dark:text-rose-400 hover:underline flex items-center gap-2 text-sm"
                             >
                               <ArrowRight className="h-3.5 w-3.5" />
                               {slug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase())}
@@ -255,7 +256,7 @@ export function InfluencerPageLayout({ data }: InfluencerPageLayoutProps) {
 
                   <Card>
                     <CardHeader className="pb-2">
-                      <CardTitle className="text-base">Helpful Guides</CardTitle>
+                      <CardTitle className="text-base bg-gradient-to-r from-rose-600 to-pink-600 dark:from-rose-400 dark:to-pink-400 bg-clip-text text-transparent">Helpful Guides</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-1.5">
@@ -263,7 +264,7 @@ export function InfluencerPageLayout({ data }: InfluencerPageLayoutProps) {
                           <li key={slug}>
                             <Link
                               href={`/guides/${slug}`}
-                              className="text-primary hover:underline flex items-center gap-2 text-sm"
+                              className="text-rose-600 dark:text-rose-400 hover:underline flex items-center gap-2 text-sm"
                             >
                               <ArrowRight className="h-3.5 w-3.5" />
                               {slug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase())}
@@ -276,7 +277,7 @@ export function InfluencerPageLayout({ data }: InfluencerPageLayoutProps) {
 
                   <Card>
                     <CardHeader className="pb-2">
-                      <CardTitle className="text-base">Useful Calculators</CardTitle>
+                      <CardTitle className="text-base bg-gradient-to-r from-rose-600 to-pink-600 dark:from-rose-400 dark:to-pink-400 bg-clip-text text-transparent">Useful Calculators</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-1.5">
@@ -284,7 +285,7 @@ export function InfluencerPageLayout({ data }: InfluencerPageLayoutProps) {
                           <li key={slug}>
                             <Link
                               href={`/calculators/${slug}`}
-                              className="text-primary hover:underline flex items-center gap-2 text-sm"
+                              className="text-rose-600 dark:text-rose-400 hover:underline flex items-center gap-2 text-sm"
                             >
                               <ArrowRight className="h-3.5 w-3.5" />
                               {slug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase())}

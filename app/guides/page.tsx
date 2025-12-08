@@ -26,6 +26,7 @@ export default function GuidesPage() {
   return (
     <div className="min-h-screen bg-background">
       <HeroSection
+        section="guides"
         breadcrumbItems={[{ label: "Creator Guides", href: "/guides" }]}
         title="Creator Guides: Expert Advice & Step-by-Step Tutorials"
         description="Comprehensive guides covering every aspect of building your influencer career. From getting started to negotiating six-figure brand deals, we have got you covered."
@@ -36,11 +37,11 @@ export default function GuidesPage() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {guides.map((guide) => (
               <Link key={guide.slug} href={`/guides/${guide.slug}`} className="group">
-                <Card className="h-full transition-all hover:shadow-md hover:border-primary/50">
+                <Card className="h-full transition-all hover:shadow-md hover:border-purple-200 dark:hover:border-purple-800/50">
                   <CardHeader className="pb-2">
                     <div className="flex items-center gap-3">
                       <span className="text-3xl">{guide.emoji}</span>
-                      <CardTitle className="text-lg group-hover:text-primary transition-colors">
+                      <CardTitle className="text-lg group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
                         {guide.title}
                       </CardTitle>
                     </div>
@@ -52,7 +53,7 @@ export default function GuidesPage() {
                         <Clock className="h-4 w-4" />
                         {guide.readingTime} min read
                       </div>
-                      <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                      <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors" />
                     </div>
                   </CardContent>
                 </Card>

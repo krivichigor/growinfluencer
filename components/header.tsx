@@ -7,12 +7,12 @@ import { t } from "@/lib/i18n"
 import { Menu, X } from "lucide-react"
 
 const navigation = [
-  { name: t("nav.home"), href: "/" },
-  { name: t("nav.influencers"), href: "/influencers" },
-  { name: t("nav.tools"), href: "/tools" },
-  { name: t("nav.guides"), href: "/guides" },
-  { name: t("nav.news"), href: "/news" },
-  { name: t("nav.calculators"), href: "/calculators" },
+  { name: t("nav.home"), href: "/", color: "text-primary" },
+  { name: t("nav.influencers"), href: "/influencers", color: "text-rose-500 dark:text-rose-400" },
+  { name: t("nav.tools"), href: "/tools", color: "text-orange-500 dark:text-orange-400" },
+  { name: t("nav.guides"), href: "/guides", color: "text-purple-500 dark:text-purple-400" },
+  { name: t("nav.news"), href: "/news", color: "text-emerald-500 dark:text-emerald-400" },
+  { name: t("nav.calculators"), href: "/calculators", color: "text-cyan-500 dark:text-cyan-400" },
 ]
 
 export function Header() {
@@ -54,8 +54,8 @@ export function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                isActive(item.href) ? "text-primary" : "text-muted-foreground"
+              className={`text-sm font-medium transition-colors ${
+                isActive(item.href) ? item.color : "text-muted-foreground hover:text-foreground"
               }`}
             >
               {item.name}
@@ -101,7 +101,7 @@ export function Header() {
                       key={item.name}
                       href={item.href}
                       className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold transition-colors hover:bg-muted ${
-                        isActive(item.href) ? "text-primary bg-primary/10" : "text-foreground"
+                        isActive(item.href) ? `${item.color} bg-primary/10` : "text-foreground"
                       }`}
                       onClick={() => setMobileMenuOpen(false)}
                     >

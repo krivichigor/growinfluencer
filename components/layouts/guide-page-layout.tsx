@@ -41,11 +41,12 @@ export function GuidePageLayout({ data }: GuidePageLayoutProps) {
 
       <div className="min-h-screen bg-background">
         {/* Hero */}
-        <section className="border-b border-border bg-gradient-to-b from-muted/50 to-background py-10 md:py-14">
-          <div className="container mx-auto px-4">
+        <section className="relative border-b border-border py-10 md:py-14 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-violet-50/50 dark:from-purple-950/10 dark:to-violet-950/10" />
+          <div className="container mx-auto px-4 relative">
             <Link
               href="/guides"
-              className="mb-4 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="mb-4 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
             >
               <ArrowLeft className="h-4 w-4" />
               {t("nav.guides")}
@@ -53,7 +54,7 @@ export function GuidePageLayout({ data }: GuidePageLayoutProps) {
 
             <div className="flex items-center gap-4 mb-4">
               <span className="text-5xl">{data.emoji}</span>
-              <h1 className="text-3xl md:text-4xl font-bold text-foreground">{data.title}</h1>
+              <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-600 to-violet-600 dark:from-purple-400 dark:to-violet-400 bg-clip-text text-transparent">{data.title}</h1>
             </div>
             <p className="text-lg text-muted-foreground max-w-2xl">{data.intro}</p>
 
@@ -62,11 +63,13 @@ export function GuidePageLayout({ data }: GuidePageLayoutProps) {
                 <Clock className="h-4 w-4" />
                 {data.readingTime} min read
               </div>
-              <Badge variant="default">{data.primaryKeyword}</Badge>
+              <span className="inline-flex items-center rounded-md border border-border px-2.5 py-0.5 text-xs font-semibold transition-colors">
+                {data.primaryKeyword}
+              </span>
               {data.secondaryKeywords.slice(0, 3).map((keyword) => (
-                <Badge key={keyword} variant="outline">
+                <span key={keyword} className="inline-flex items-center rounded-md border border-border px-2.5 py-0.5 text-xs font-semibold transition-colors">
                   {keyword}
-                </Badge>
+                </span>
               ))}
             </div>
           </div>
@@ -77,7 +80,7 @@ export function GuidePageLayout({ data }: GuidePageLayoutProps) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <aside className="lg:col-span-3 order-2 lg:order-1">
               <div className="sticky top-24">
-                <TableOfContents items={tocItems} />
+                <TableOfContents items={tocItems} section="guides" />
               </div>
             </aside>
 
@@ -101,8 +104,8 @@ export function GuidePageLayout({ data }: GuidePageLayoutProps) {
                         {section.steps.map((step, i) => (
                           <Card key={i}>
                             <CardHeader className="bg-muted/50 pb-2">
-                              <CardTitle className="flex items-center gap-3">
-                                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-bold">
+                              <CardTitle className="flex items-center gap-3 bg-gradient-to-r from-purple-600 to-violet-600 dark:from-purple-400 dark:to-violet-400 bg-clip-text text-transparent">
+                                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-purple-500 to-violet-500 text-white text-sm font-bold">
                                   {i + 1}
                                 </span>
                                 {step.title}
@@ -118,8 +121,8 @@ export function GuidePageLayout({ data }: GuidePageLayoutProps) {
                     {section.tips && (
                       <div className="mt-6 space-y-2">
                         {section.tips.map((tip, i) => (
-                          <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-muted/50">
-                            <CheckCircle className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                          <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-purple-50/50 dark:bg-purple-950/10 border border-purple-100 dark:border-purple-900/20">
+                            <CheckCircle className="h-5 w-5 text-purple-600 dark:text-purple-400 shrink-0 mt-0.5" />
                             <span className="text-foreground">{tip}</span>
                           </div>
                         ))}
@@ -134,8 +137,8 @@ export function GuidePageLayout({ data }: GuidePageLayoutProps) {
                 <h2 className="text-2xl font-bold text-foreground mb-4">✅ Best Practices</h2>
                 <div className="grid gap-3">
                   {data.bestPractices.map((practice, i) => (
-                    <div key={i} className="flex items-start gap-3 p-4 rounded-lg bg-muted/50">
-                      <CheckCircle className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                    <div key={i} className="flex items-start gap-3 p-4 rounded-lg bg-purple-50/50 dark:bg-purple-950/10 border border-purple-100 dark:border-purple-900/20">
+                      <CheckCircle className="h-5 w-5 text-purple-600 dark:text-purple-400 shrink-0 mt-0.5" />
                       <span className="text-foreground">{practice}</span>
                     </div>
                   ))}
@@ -148,11 +151,11 @@ export function GuidePageLayout({ data }: GuidePageLayoutProps) {
                 <div className="grid gap-4 sm:grid-cols-2">
                   {data.recommendedTools.map((tool) => (
                     <Link key={tool.slug} href={`/tools/${tool.slug}`} className="group">
-                      <Card className="h-full transition-all hover:shadow-md hover:border-primary/50">
+                      <Card className="h-full transition-all hover:shadow-md hover:border-purple-200 dark:hover:border-purple-800/50">
                         <CardHeader className="pb-2">
                           <CardTitle className="text-lg flex items-center justify-between">
                             {tool.name}
-                            <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                            <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors" />
                           </CardTitle>
                         </CardHeader>
                         <CardContent>
@@ -176,7 +179,7 @@ export function GuidePageLayout({ data }: GuidePageLayoutProps) {
                 <div className="grid gap-4 md:grid-cols-2">
                   <Card>
                     <CardHeader>
-                      <CardTitle className="text-lg">Related Guides</CardTitle>
+                      <CardTitle className="text-lg bg-gradient-to-r from-purple-600 to-violet-600 dark:from-purple-400 dark:to-violet-400 bg-clip-text text-transparent">Related Guides</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-2">
@@ -184,7 +187,7 @@ export function GuidePageLayout({ data }: GuidePageLayoutProps) {
                           <li key={slug}>
                             <Link
                               href={`/guides/${slug}`}
-                              className="text-primary hover:underline flex items-center gap-2"
+                              className="text-purple-600 dark:text-purple-400 hover:underline flex items-center gap-2"
                             >
                               <ArrowRight className="h-4 w-4" />
                               {slug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase())}
@@ -196,7 +199,7 @@ export function GuidePageLayout({ data }: GuidePageLayoutProps) {
                   </Card>
                   <Card>
                     <CardHeader>
-                      <CardTitle className="text-lg">Related Calculators</CardTitle>
+                      <CardTitle className="text-lg bg-gradient-to-r from-purple-600 to-violet-600 dark:from-purple-400 dark:to-violet-400 bg-clip-text text-transparent">Related Calculators</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-2">
@@ -204,7 +207,7 @@ export function GuidePageLayout({ data }: GuidePageLayoutProps) {
                           <li key={slug}>
                             <Link
                               href={`/calculators/${slug}`}
-                              className="text-primary hover:underline flex items-center gap-2"
+                              className="text-purple-600 dark:text-purple-400 hover:underline flex items-center gap-2"
                             >
                               <ArrowRight className="h-4 w-4" />
                               {slug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase())}
