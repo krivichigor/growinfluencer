@@ -23,27 +23,27 @@ export interface NewsArticle {
 
 export const newsArticles: NewsArticle[] = [
   {
-    slug: "tiktok-algorithm-update-2024",
-    title: "TikTok Algorithm Update 2024: What Creators Need to Know",
+    slug: "tiktok-algorithm-update-2025",
+    title: "TikTok Algorithm Update 2025: What Creators Need to Know",
     category: "TikTok",
-    metaTitle: "TikTok Algorithm Update 2024 - Changes Affecting Creator Reach",
+    metaTitle: "TikTok Algorithm Update 2025 - Changes Affecting Creator Reach",
     metaDesc:
-      "Breaking down the latest TikTok algorithm changes in 2024. Learn how updates affect creator reach, content strategy, and what you need to adapt.",
-    primaryKeyword: "tiktok algorithm 2024",
+      "Breaking down the latest TikTok algorithm changes in 2025. Learn how updates affect creator reach, content strategy, and what you need to adapt.",
+    primaryKeyword: "tiktok algorithm 2025",
     secondaryKeywords: ["tiktok update", "tiktok changes", "fyp algorithm", "tiktok reach", "content visibility"],
     excerpt:
       "TikTok has rolled out significant algorithm changes that are reshaping how content reaches viewers. Here's what every creator needs to understand.",
     summary:
       "TikTok's latest algorithm update introduces several changes affecting content distribution. The platform is now placing greater emphasis on watch time and completion rates over raw engagement metrics. Additionally, content originality detection has improved, meaning repurposed or duplicate content faces reduced visibility. The update also introduces enhanced topic clustering, showing viewers more content from creators they've engaged with while still surfacing new creators. These changes reward quality, original content and consistent posting over viral-chasing strategies.",
     readingTime: 10,
-    datePublished: "2024-12-15",
-    dateModified: "2024-12-20",
+    datePublished: "2025-11-15",
+    dateModified: "2025-11-20",
     sections: [
       {
         id: "key-changes",
         title: "Key Algorithm Changes",
         content:
-          "The 2024 TikTok algorithm update brings three major changes. First, watch time weighting has increased significantly—videos that hold attention through to the end receive substantially more distribution than those with high drop-off rates. Second, originality scoring now plays a larger role in content distribution. TikTok's systems can better detect recycled content, reposts, and slight variations of existing videos. Original content receives preferential treatment. Third, creator clustering has evolved. While the FYP still introduces new creators, users now see more content from creators they've previously engaged with, creating stickier viewing patterns.",
+          "The 2025 TikTok algorithm update brings three major changes. First, watch time weighting has increased significantly—videos that hold attention through to the end receive substantially more distribution than those with high drop-off rates. Second, originality scoring now plays a larger role in content distribution. TikTok's systems can better detect recycled content, reposts, and slight variations of existing videos. Original content receives preferential treatment. Third, creator clustering has evolved. While the FYP still introduces new creators, users now see more content from creators they've previously engaged with, creating stickier viewing patterns.",
       },
       {
         id: "impact-on-reach",
@@ -102,7 +102,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "youtube-monetization-changes",
     title: "YouTube Monetization Changes: New Requirements Explained",
     category: "YouTube",
-    metaTitle: "YouTube Monetization Changes 2024 - New Partner Program Requirements",
+    metaTitle: "YouTube Monetization Changes 2025 - New Partner Program Requirements",
     metaDesc:
       "YouTube has updated monetization requirements for the Partner Program. Learn about new thresholds, expanded features, and how to qualify faster.",
     primaryKeyword: "youtube monetization",
@@ -118,8 +118,8 @@ export const newsArticles: NewsArticle[] = [
     summary:
       "YouTube's updated Partner Program introduces tiered monetization with lower entry requirements. Creators can now access certain monetization features at 500 subscribers with 3,000 watch hours (or 3 million Shorts views), down from the previous 1,000 subscriber requirement. Full monetization with ad revenue sharing still requires 1,000 subscribers and 4,000 watch hours. The changes also expand Shorts monetization, with a dedicated revenue pool for short-form content. Additionally, YouTube is rolling out more monetization features including expanded Super Chat availability and member-only Shorts.",
     readingTime: 11,
-    datePublished: "2024-12-10",
-    dateModified: "2024-12-18",
+    datePublished: "2025-11-10",
+    dateModified: "2025-11-18",
     sections: [
       {
         id: "new-requirements",
@@ -184,7 +184,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "instagram-reels-trends",
     title: "Instagram Reels Trends: What's Working Now",
     category: "Instagram",
-    metaTitle: "Instagram Reels Trends 2024 - Current Best Practices for Reach",
+    metaTitle: "Instagram Reels Trends 2025 - Current Best Practices for Reach",
     metaDesc:
       "Discover what's working on Instagram Reels right now. Current trends, algorithm insights, and strategies for maximum reach on Meta's short-form platform.",
     primaryKeyword: "instagram reels trends",
@@ -194,8 +194,8 @@ export const newsArticles: NewsArticle[] = [
     summary:
       "Instagram Reels have become the primary growth driver on the platform, with Meta continuing to prioritize short-form video in the algorithm. Current trends show educational and value-first content outperforming pure entertainment. Audio trends cycle faster than on TikTok, with original audio gaining more traction. Instagram is rewarding consistency and creator-viewer relationships more heavily, with collaborative features like Collabs and Add Yours stickers driving significant engagement. The platform has also improved Reels discoverability through enhanced search and explore algorithms.",
     readingTime: 9,
-    datePublished: "2024-12-12",
-    dateModified: "2024-12-19",
+    datePublished: "2025-11-12",
+    dateModified: "2025-11-19",
     sections: [
       {
         id: "current-trends",
@@ -264,7 +264,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "twitch-policy-update",
     title: "Twitch Policy Update: What Streamers Must Know",
     category: "Twitch",
-    metaTitle: "Twitch Policy Update 2024 - New Guidelines for Streamers",
+    metaTitle: "Twitch Policy Update 2025 - New Guidelines for Streamers",
     metaDesc:
       "Twitch has updated platform policies affecting streamers. Learn about new rules on sponsorships, content guidelines, and revenue sharing changes.",
     primaryKeyword: "twitch policy update",
@@ -280,8 +280,8 @@ export const newsArticles: NewsArticle[] = [
     summary:
       "Twitch's latest policy updates address several areas of concern for streamers. The platform has introduced clearer guidelines for sponsorship disclosures, requiring specific disclosure placement and language. Revenue sharing has seen adjustments with the 70/30 split now available to more Partner streamers. Content guidelines have been updated to address AI-generated content, gambling streams in certain regions, and simultaneous streaming rights. The update also includes expanded creative content categories and improved tools for managing community safety.",
     readingTime: 12,
-    datePublished: "2024-12-08",
-    dateModified: "2024-12-16",
+    datePublished: "2025-11-08",
+    dateModified: "2025-11-16",
     sections: [
       {
         id: "sponsorship-rules",
@@ -347,12 +347,12 @@ export const newsArticles: NewsArticle[] = [
   },
   {
     slug: "creator-economy-growth-report",
-    title: "Creator Economy Growth Report: 2024 Market Analysis",
+    title: "Creator Economy Growth Report: 2025 Market Analysis",
     category: "Industry",
-    metaTitle: "Creator Economy 2024 Report - Market Size, Trends & Projections",
+    metaTitle: "Creator Economy 2025 Report - Market Size, Trends & Projections",
     metaDesc:
-      "Comprehensive analysis of the creator economy in 2024. Market size, platform growth, creator earnings data, and projections for the industry's future.",
-    primaryKeyword: "creator economy 2024",
+      "Comprehensive analysis of the creator economy in 2025. Market size, platform growth, creator earnings data, and projections for the industry's future.",
+    primaryKeyword: "creator economy 2025",
     secondaryKeywords: [
       "influencer market",
       "creator industry",
@@ -363,16 +363,16 @@ export const newsArticles: NewsArticle[] = [
     excerpt:
       "The creator economy continues its explosive growth trajectory. New data reveals market size, platform trends, and opportunities for content creators.",
     summary:
-      "The creator economy has reached $250 billion in 2024, with projections suggesting $480 billion by 2027. Over 50 million people globally now consider themselves content creators, with 2+ million earning full-time income. Platform revenue sharing has increased across the board, with TikTok, YouTube, and Instagram all expanding creator monetization programs. Brand spending on influencer marketing reached $34 billion this year, with micro-influencers seeing the fastest partnership growth. AI tools, community commerce, and direct audience monetization are emerging as key trends shaping the industry's evolution.",
+      "The creator economy has reached $250 billion in 2025, with projections suggesting $480 billion by 2027. Over 50 million people globally now consider themselves content creators, with 2+ million earning full-time income. Platform revenue sharing has increased across the board, with TikTok, YouTube, and Instagram all expanding creator monetization programs. Brand spending on influencer marketing reached $34 billion this year, with micro-influencers seeing the fastest partnership growth. AI tools, community commerce, and direct audience monetization are emerging as key trends shaping the industry's evolution.",
     readingTime: 14,
-    datePublished: "2024-12-05",
-    dateModified: "2024-12-14",
+    datePublished: "2025-11-05",
+    dateModified: "2025-11-14",
     sections: [
       {
         id: "market-size",
         title: "Market Size and Growth",
         content:
-          "The creator economy market has reached approximately $250 billion in 2024, growing at a 15% compound annual rate. This encompasses platform revenues, brand partnership spending, direct creator income, and supporting services. The United States leads with the largest creator market, followed by Brazil, India, and the UK. Mobile-first markets are seeing fastest growth rates as smartphone video creation and consumption accelerates. Investment in creator-focused startups has cooled from 2021-2022 peaks but remains significant at $3+ billion annually.",
+          "The creator economy market has reached approximately $250 billion in 2025, growing at a 15% compound annual rate. This encompasses platform revenues, brand partnership spending, direct creator income, and supporting services. The United States leads with the largest creator market, followed by Brazil, India, and the UK. Mobile-first markets are seeing fastest growth rates as smartphone video creation and consumption accelerates. Investment in creator-focused startups has cooled from 2021-2022 peaks but remains significant at $3+ billion annually.",
       },
       {
         id: "platform-trends",

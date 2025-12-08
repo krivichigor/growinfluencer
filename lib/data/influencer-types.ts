@@ -559,7 +559,7 @@ export const influencerTypes: InfluencerType[] = [
       {
         question: "How important are Instagram Reels?",
         answer:
-          "Critical for growth in 2024-2025. Reels receive significantly more reach than static posts. Instagram is prioritizing video content, so incorporating Reels into your strategy is essential for staying competitive.",
+          "Critical for growth in 2025-2026. Reels receive significantly more reach than static posts. Instagram is prioritizing video content, so incorporating Reels into your strategy is essential for staying competitive.",
       },
     ],
     relatedInfluencers: ["tiktok-creator", "youtuber", "micro-influencer"],

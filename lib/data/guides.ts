@@ -46,8 +46,8 @@ export const guides: Guide[] = [
     fullIntro:
       "Becoming an influencer in 2025 is both more accessible and more competitive than ever before. With billions of users across social platforms, there's an audience for virtually every niche and interest. However, standing out requires more than just posting content—it demands strategy, consistency, authenticity, and a deep understanding of your target audience. This comprehensive guide will walk you through every step of becoming a successful influencer, from finding your niche to landing your first brand deal. Whether you're starting with zero followers or looking to take your existing presence to the next level, these proven strategies will help you build a sustainable career as a content creator.",
     readingTime: 15,
-    datePublished: "2025-01-01",
-    dateModified: "2025-01-15",
+    datePublished: "2025-10-01",
+    dateModified: "2025-10-15",
     sections: [
       {
         id: "find-your-niche",
@@ -312,8 +312,8 @@ export const guides: Guide[] = [
     fullIntro:
       "TikTok's unique algorithm gives every creator a chance to go viral, regardless of follower count. Unlike other platforms where your reach depends heavily on existing followers, TikTok evaluates each video independently based on engagement signals. This means a brand new account can reach millions with the right content. However, sustainable growth requires more than viral luck—it demands understanding the algorithm, creating compelling hooks, riding trends while adding value, and building genuine connection with your audience. This guide reveals the strategies used by TikTok's fastest-growing creators to build loyal audiences quickly.",
     readingTime: 12,
-    datePublished: "2025-01-01",
-    dateModified: "2025-01-15",
+    datePublished: "2025-10-01",
+    dateModified: "2025-10-15",
     sections: [
       {
         id: "understand-algorithm",
@@ -494,8 +494,8 @@ export const guides: Guide[] = [
     fullIntro:
       "Brand partnerships represent the largest income source for most influencers, yet many creators leave money on the table by not knowing how to negotiate effectively. Whether you're landing your first brand deal or looking to increase your rates, understanding the business side of influencer marketing is essential. This guide covers everything from valuing your worth and creating a compelling media kit to navigating negotiations, understanding contracts, and building long-term brand relationships. You'll learn the strategies top creators use to command premium rates while maintaining authenticity with their audience.",
     readingTime: 14,
-    datePublished: "2025-01-01",
-    dateModified: "2025-01-15",
+    datePublished: "2025-10-01",
+    dateModified: "2025-10-15",
     sections: [
       {
         id: "know-your-worth",
@@ -703,8 +703,8 @@ export const guides: Guide[] = [
     fullIntro:
       "A content calendar transforms chaotic posting into strategic growth. Instead of scrambling to create daily, you'll plan ahead, batch create, and maintain consistency—the single most important factor in social media success. This guide shows you how to build a content calendar tailored to your goals, platforms, and capacity. You'll learn to identify content pillars, plan posting frequency, batch create efficiently, and adapt your calendar based on performance. Whether you're managing one platform or five, these systems help you create more in less time while improving content quality.",
     readingTime: 11,
-    datePublished: "2025-01-01",
-    dateModified: "2025-01-15",
+    datePublished: "2025-10-01",
+    dateModified: "2025-10-15",
     sections: [
       {
         id: "content-pillars",
@@ -904,8 +904,8 @@ export const guides: Guide[] = [
     fullIntro:
       "Good equipment can improve your content, but it's not as important as many beginners think. Many successful creators started with just their smartphones. That said, strategic equipment investments can significantly improve production quality, save editing time, and help you stand out. This guide covers essential equipment categories, budget-friendly options that punch above their weight, and guidance on when to upgrade. Whether you're starting with $0 or ready to invest $1,000+, you'll learn what equipment actually matters and what's just nice to have.",
     readingTime: 13,
-    datePublished: "2025-01-01",
-    dateModified: "2025-01-15",
+    datePublished: "2025-10-01",
+    dateModified: "2025-10-15",
     sections: [
       {
         id: "lighting",
