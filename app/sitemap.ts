@@ -1,48 +1,10 @@
 import type { MetadataRoute } from "next"
 import { siteConfig } from "@/lib/seo"
-
-const influencerTypes = [
-  "tiktok-creator",
-  "youtuber",
-  "instagram-creator",
-  "twitch-streamer",
-  "gamer-creator",
-  "all-in-one-creator",
-  "micro-influencer",
-  "podcaster",
-]
-
-const tools = [
-  "hootsuite",
-  "tubebuddy",
-  "capcut",
-  "canva",
-  "streamlabs",
-  "socialblade",
-  "streamscharts",
-  "notion-for-creators",
-  "fiverr-collabs",
-  "epidemic-sound",
-  "linktree",
-]
-
-const guides = [
-  "how-to-become-an-influencer",
-  "how-to-grow-on-tiktok",
-  "how-to-negotiate-brand-deals",
-  "how-to-create-content-calendar",
-  "best-equipment-for-beginners",
-]
-
-const news = [
-  "tiktok-algorithm-update-2025",
-  "youtube-monetization-changes",
-  "instagram-reels-trends",
-  "twitch-policy-update",
-  "creator-economy-market-growth",
-]
-
-const calculators = ["engagement-rate", "collaboration-fee", "hashtag-reach", "sponsored-post-roi", "content-calendar"]
+import { influencerTypes } from "@/lib/data/influencer-types"
+import { tools } from "@/lib/data/tools"
+import { guides } from "@/lib/data/guides"
+import { newsArticles } from "@/lib/data/news"
+import { calculatorsMeta } from "@/lib/data/calculators"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url
@@ -56,36 +18,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/calculators`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.9 },
   ]
 
-  const influencerPages = influencerTypes.map((slug) => ({
-    url: `${baseUrl}/influencers/${slug}`,
+  const influencerPages = influencerTypes.map((type) => ({
+    url: `${baseUrl}/influencers/${type.slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }))
 
-  const toolPages = tools.map((slug) => ({
-    url: `${baseUrl}/tools/${slug}`,
+  const toolPages = tools.map((tool) => ({
+    url: `${baseUrl}/tools/${tool.slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }))
 
-  const guidePages = guides.map((slug) => ({
-    url: `${baseUrl}/guides/${slug}`,
-    lastModified: new Date(),
+  const guidePages = guides.map((guide) => ({
+    url: `${baseUrl}/guides/${guide.slug}`,
+    lastModified: new Date(guide.dateModified),
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }))
 
-  const newsPages = news.map((slug) => ({
-    url: `${baseUrl}/news/${slug}`,
-    lastModified: new Date(),
+  const newsPages = newsArticles.map((article) => ({
+    url: `${baseUrl}/news/${article.slug}`,
+    lastModified: new Date(article.dateModified),
     changeFrequency: "weekly" as const,
     priority: 0.6,
   }))
 
-  const calculatorPages = calculators.map((slug) => ({
-    url: `${baseUrl}/calculators/${slug}`,
+  const calculatorPages = calculatorsMeta.map((calc) => ({
+    url: `${baseUrl}/calculators/${calc.slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.8,
