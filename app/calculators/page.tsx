@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowRight, TrendingUp, Target, Zap, Calendar, Hash } from "lucide-react"
 import { generateMetadata as genMeta } from "@/lib/seo"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Breadcrumb } from "@/components/breadcrumb"
+import { HeroSection } from "@/components/hero-section"
 
 export const metadata: Metadata = genMeta({
   title: "Free Influencer Calculators: Engagement Rate, Fees & ROI Tools",
@@ -67,24 +67,11 @@ const calculators = [
 export default function CalculatorsPage() {
   return (
     <div className="min-h-screen bg-background">
-      <section className="border-b border-border bg-gradient-to-b from-muted/50 to-background py-8 md:py-10">
-        <div className="container mx-auto px-4">
-          <Breadcrumb
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Free Calculators", href: "/calculators" },
-            ]}
-          />
-
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground mt-4">
-            Free Influencer Calculators: Make Data-Driven Decisions
-          </h1>
-          <p className="text-muted-foreground mt-2 max-w-3xl text-lg">
-            5 powerful calculators to help you understand your worth, optimize your content strategy, and maximize your
-            earnings as a content creator. 100% free, no sign-up required.
-          </p>
-        </div>
-      </section>
+      <HeroSection
+        breadcrumbItems={[{ label: "Free Calculators", href: "/calculators" }]}
+        title="Free Influencer Calculators: Make Data-Driven Decisions"
+        description="5 powerful calculators to help you understand your worth, optimize your content strategy, and maximize your earnings as a content creator. 100% free, no sign-up required."
+      />
 
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-4">

@@ -5,7 +5,7 @@ import { generateMetadata as genMeta } from "@/lib/seo"
 import { tools } from "@/lib/data/tools"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Breadcrumb } from "@/components/breadcrumb"
+import { HeroSection } from "@/components/hero-section"
 
 export const metadata: Metadata = genMeta({
   title: "Best Influencer Tools 2025: 11 Essential Apps for Content Creators",
@@ -29,32 +29,19 @@ const categories = [...new Set(tools.map((t) => t.category))]
 export default function ToolsPage() {
   return (
     <div className="min-h-screen bg-background">
-      <section className="border-b border-border bg-gradient-to-b from-muted/50 to-background py-8 md:py-10">
-        <div className="container mx-auto px-4">
-          <Breadcrumb
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Creator Tools", href: "/tools" },
-            ]}
-          />
-
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground mt-4">
-            Best Influencer Tools: Reviews & Comparisons
-          </h1>
-          <p className="text-muted-foreground mt-2 max-w-3xl text-lg">
-            Curated reviews of 11 essential tools for content creators. Find the perfect apps for scheduling, editing,
-            analytics, and monetization with honest pricing and feature comparisons.
-          </p>
-
-          <div className="flex flex-wrap gap-2 mt-4">
-            {categories.map((cat) => (
-              <Badge key={cat} variant="secondary" className="text-sm">
-                {cat}
-              </Badge>
-            ))}
-          </div>
+      <HeroSection
+        breadcrumbItems={[{ label: "Creator Tools", href: "/tools" }]}
+        title="Best Influencer Tools: Reviews & Comparisons"
+        description="Curated reviews of 11 essential tools for content creators. Find the perfect apps for scheduling, editing, analytics, and monetization with honest pricing and feature comparisons."
+      >
+        <div className="flex flex-wrap gap-2 mt-4">
+          {categories.map((cat) => (
+            <Badge key={cat} variant="secondary" className="text-sm">
+              {cat}
+            </Badge>
+          ))}
         </div>
-      </section>
+      </HeroSection>
 
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-4">

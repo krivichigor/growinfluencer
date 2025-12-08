@@ -5,7 +5,7 @@ import { generateMetadata as genMeta } from "@/lib/seo"
 import { influencerTypes } from "@/lib/data/influencer-types"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Breadcrumb } from "@/components/breadcrumb"
+import { HeroSection } from "@/components/hero-section"
 
 export const metadata: Metadata = genMeta({
   title: "Types of Influencers: Complete Guide to 8 Creator Niches (2025)",
@@ -40,24 +40,11 @@ const influencerTags: Record<string, string[]> = {
 export default function InfluencersPage() {
   return (
     <div className="min-h-screen bg-background">
-      <section className="border-b border-border bg-gradient-to-b from-muted/50 to-background py-8 md:py-10">
-        <div className="container mx-auto px-4">
-          <Breadcrumb
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Influencer Types", href: "/influencers" },
-            ]}
-          />
-
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground mt-4">
-            Types of Influencers: Find Your Creator Path
-          </h1>
-          <p className="text-muted-foreground mt-2 max-w-3xl text-lg">
-            Explore 8 different influencer types and discover which content creation style matches your passion, skills,
-            and goals. Each path offers unique opportunities for growth and monetization.
-          </p>
-        </div>
-      </section>
+      <HeroSection
+        breadcrumbItems={[{ label: "Influencer Types", href: "/influencers" }]}
+        title="Types of Influencers: Find Your Creator Path"
+        description="Explore 8 different influencer types and discover which content creation style matches your passion, skills, and goals. Each path offers unique opportunities for growth and monetization."
+      />
 
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-4">

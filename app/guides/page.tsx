@@ -4,7 +4,7 @@ import { ArrowRight, Clock } from "lucide-react"
 import { generateMetadata as genMeta } from "@/lib/seo"
 import { guides } from "@/lib/data/guides"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Breadcrumb } from "@/components/breadcrumb"
+import { HeroSection } from "@/components/hero-section"
 
 export const metadata: Metadata = genMeta({
   title: "Influencer Guides 2025: Expert Tutorials for Content Creators",
@@ -25,24 +25,11 @@ export const metadata: Metadata = genMeta({
 export default function GuidesPage() {
   return (
     <div className="min-h-screen bg-background">
-      <section className="border-b border-border bg-gradient-to-b from-muted/50 to-background py-8 md:py-10">
-        <div className="container mx-auto px-4">
-          <Breadcrumb
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Creator Guides", href: "/guides" },
-            ]}
-          />
-
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground mt-4">
-            Creator Guides: Expert Advice & Step-by-Step Tutorials
-          </h1>
-          <p className="text-muted-foreground mt-2 max-w-3xl text-lg">
-            Comprehensive guides covering every aspect of building your influencer career. From getting started to
-            negotiating six-figure brand deals, we have got you covered.
-          </p>
-        </div>
-      </section>
+      <HeroSection
+        breadcrumbItems={[{ label: "Creator Guides", href: "/guides" }]}
+        title="Creator Guides: Expert Advice & Step-by-Step Tutorials"
+        description="Comprehensive guides covering every aspect of building your influencer career. From getting started to negotiating six-figure brand deals, we have got you covered."
+      />
 
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-4">

@@ -5,7 +5,7 @@ import { generateMetadata as genMeta } from "@/lib/seo"
 import { newsArticles } from "@/lib/data/news"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Breadcrumb } from "@/components/breadcrumb"
+import { HeroSection } from "@/components/hero-section"
 
 export const metadata: Metadata = genMeta({
   title: "Creator News 2025: Platform Updates & Algorithm Changes",
@@ -26,24 +26,11 @@ export const metadata: Metadata = genMeta({
 export default function NewsPage() {
   return (
     <div className="min-h-screen bg-background">
-      <section className="border-b border-border bg-gradient-to-b from-muted/50 to-background py-8 md:py-10">
-        <div className="container mx-auto px-4">
-          <Breadcrumb
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Industry News", href: "/news" },
-            ]}
-          />
-
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground mt-4">
-            Industry News: Platform Updates & Creator Economy Trends
-          </h1>
-          <p className="text-muted-foreground mt-2 max-w-3xl text-lg">
-            Stay informed about the latest algorithm changes, monetization updates, and market trends affecting content
-            creators. Knowledge is power in the creator economy.
-          </p>
-        </div>
-      </section>
+      <HeroSection
+        breadcrumbItems={[{ label: "Industry News", href: "/news" }]}
+        title="Industry News: Platform Updates & Creator Economy Trends"
+        description="Stay informed about the latest algorithm changes, monetization updates, and market trends affecting content creators. Knowledge is power in the creator economy."
+      />
 
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-4">

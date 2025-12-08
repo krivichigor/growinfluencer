@@ -50,7 +50,6 @@ export function InfluencerPageLayout({ data }: InfluencerPageLayoutProps) {
           <div className="container mx-auto px-4">
             <Breadcrumb
               items={[
-                { label: t("nav.home"), href: "/" },
                 { label: t("nav.influencers"), href: "/influencers" },
                 { label: data.name, href: `/influencers/${data.slug}` },
               ]}
