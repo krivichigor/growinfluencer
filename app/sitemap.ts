@@ -35,7 +35,7 @@ const guides = [
 ]
 
 const news = [
-  "tiktok-algorithm-update-2024",
+  "tiktok-algorithm-update-2025",
   "youtube-monetization-changes",
   "instagram-reels-trends",
   "twitch-policy-update",
