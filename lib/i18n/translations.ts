@@ -9,6 +9,9 @@ export const translations = {
       description:
         "The ultimate resource hub for influencers and content creators. Guides, tools, calculators, and expert advice to grow your audience and monetize your content.",
     },
+    common: {
+      faq: "FAQ",
+    },
 
     // Navigation
     nav: {
