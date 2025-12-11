@@ -8,6 +8,7 @@ import { JsonLd } from "@/components/json-ld"
 import { generateArticleSchema, generateFAQSchema } from "@/lib/seo"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { MarkdownContent } from "@/components/markdown-content"
 
 interface GuidePageLayoutProps {
   data: Guide
@@ -98,7 +99,9 @@ export function GuidePageLayout({ data }: GuidePageLayoutProps) {
                     {section.emoji} {section.title}
                   </h2>
                   <div className="prose prose-slate max-w-none">
-                    <p className="text-muted-foreground leading-relaxed mb-4">{section.content}</p>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      <MarkdownContent content={section.content} />
+                    </p>
                     {section.steps && (
                       <div className="space-y-4 mt-6">
                         {section.steps.map((step, i) => (
@@ -112,7 +115,7 @@ export function GuidePageLayout({ data }: GuidePageLayoutProps) {
                               </CardTitle>
                             </CardHeader>
                             <CardContent className="pt-4">
-                              <p className="text-muted-foreground">{step.description}</p>
+                              <p className="text-muted-foreground"><MarkdownContent content={step.description} /></p>
                             </CardContent>
                           </Card>
                         ))}

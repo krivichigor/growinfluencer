@@ -8,6 +8,7 @@ import { generateArticleSchema } from "@/lib/seo"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Breadcrumb } from "@/components/breadcrumb"
+import { MarkdownContent } from "@/components/markdown-content"
 
 interface NewsPageLayoutProps {
   data: NewsArticle
@@ -100,7 +101,9 @@ export function NewsPageLayout({ data }: NewsPageLayoutProps) {
                 <section key={section.id} id={section.id} className="mb-10">
                   <h2 className="text-xl font-bold text-foreground mb-3 flex items-center gap-2">{section.title}</h2>
                   <div className="prose prose-slate max-w-none">
-                    <p className="text-muted-foreground leading-relaxed">{section.content}</p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      <MarkdownContent content={section.content} />
+                    </p>
                   </div>
                 </section>
               ))}

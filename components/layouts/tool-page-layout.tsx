@@ -8,6 +8,7 @@ import { JsonLd } from "@/components/json-ld"
 import { generateSoftwareSchema, generateFAQSchema } from "@/lib/seo"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { MarkdownContent } from "@/components/markdown-content"
 
 interface ToolPageLayoutProps {
   data: Tool
@@ -116,7 +117,9 @@ export function ToolPageLayout({ data }: ToolPageLayoutProps) {
               {/* Overview */}
               <section id="overview">
                 <h2 className="text-2xl font-bold text-foreground mb-4">📖 Overview</h2>
-                <p className="text-muted-foreground leading-relaxed text-lg">{data.overview}</p>
+                <p className="text-muted-foreground leading-relaxed text-lg">
+                  <MarkdownContent content={data.overview} />
+                </p>
               </section>
 
               {/* Features */}
@@ -129,7 +132,9 @@ export function ToolPageLayout({ data }: ToolPageLayoutProps) {
                         <CardTitle className="text-lg bg-gradient-to-r from-orange-600 to-pink-600 dark:from-orange-400 dark:to-pink-400 bg-clip-text text-transparent">{feature.title}</CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <p className="text-sm text-muted-foreground">{feature.description}</p>
+                        <p className="text-sm text-muted-foreground">
+                          <MarkdownContent content={feature.description} />
+                        </p>
                       </CardContent>
                     </Card>
                   ))}
@@ -241,7 +246,9 @@ export function ToolPageLayout({ data }: ToolPageLayoutProps) {
                         </CardTitle>
                       </CardHeader>
                       <CardContent className="pt-4">
-                        <p className="text-muted-foreground">{step.description}</p>
+                        <p className="text-muted-foreground">
+                          <MarkdownContent content={step.description} />
+                        </p>
                       </CardContent>
                     </Card>
                   ))}
