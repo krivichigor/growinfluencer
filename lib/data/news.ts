@@ -46,7 +46,7 @@ export const newsArticles: NewsArticle[] = [
       {
         "id": "the-record-to-beat",
         "title": "The Metric to Beat: 2024's Historic Run",
-        "content": "To understand the stakes for tonight, we must look at the gargantuan numbers from 2024. Last year's 10th-anniversary show didn't just break records; it shattered them with **154 million global livestreams** and a staggering **15.2 million hours watched**. The event saw a 31% year-over-year increase in viewership, largely driven by the massive Chinese audience for *Black Myth: Wukong* and the critical acclaim of *Astro Bot*. Creators looking to cover tonight's event should benchmark their own performance against these industry highs using tools like [SocialBlade](/tools/socialblade) to track real-time growth."
+        "content": "To understand the stakes for tonight, we must look at the gargantuan numbers from 2024. Last year's 10th-anniversary show didn't just break records; it shattered them with **154 million global livestreams** and a staggering **15.2 million hours watched**. The event saw a 31% year-over-year increase in viewership, largely driven by the massive Chinese audience for *Black Myth: Wukong* and the critical acclaim of *Astro Bot*. Creators looking to cover tonight's event should benchmark their own performance against these industry highs using tools like [SocialBlade](/tools/socialblade) or [StreamsCharts](/tools/streamscharts) to track real-time growth."
       },
       {
         "id": "viewership-drivers-2025",
