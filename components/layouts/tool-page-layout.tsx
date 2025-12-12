@@ -117,9 +117,7 @@ export function ToolPageLayout({ data }: ToolPageLayoutProps) {
               {/* Overview */}
               <section id="overview">
                 <h2 className="text-2xl font-bold text-foreground mb-4">📖 Overview</h2>
-                <p className="text-muted-foreground leading-relaxed text-lg">
-                  <MarkdownContent content={data.overview} />
-                </p>
+                <MarkdownContent className="text-muted-foreground leading-relaxed text-lg" content={data.overview} />
               </section>
 
               {/* Features */}
@@ -132,9 +130,7 @@ export function ToolPageLayout({ data }: ToolPageLayoutProps) {
                         <CardTitle className="text-lg bg-gradient-to-r from-orange-600 to-pink-600 dark:from-orange-400 dark:to-pink-400 bg-clip-text text-transparent">{feature.title}</CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <p className="text-sm text-muted-foreground">
-                          <MarkdownContent content={feature.description} />
-                        </p>
+                        <MarkdownContent className="text-sm" content={feature.description} />
                       </CardContent>
                     </Card>
                   ))}
@@ -246,9 +242,7 @@ export function ToolPageLayout({ data }: ToolPageLayoutProps) {
                         </CardTitle>
                       </CardHeader>
                       <CardContent className="pt-4">
-                        <p className="text-muted-foreground">
-                          <MarkdownContent content={step.description} />
-                        </p>
+                        <MarkdownContent content={step.description} />
                       </CardContent>
                     </Card>
                   ))}

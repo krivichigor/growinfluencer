@@ -100,18 +100,14 @@ export function InfluencerPageLayout({ data }: InfluencerPageLayoutProps) {
             <main className="lg:col-span-9 order-1 lg:order-2">
               <section id="introduction" className="mb-10">
                 <h2 className="text-xl font-bold text-foreground mb-3 flex items-center gap-2">📖 Introduction</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  <MarkdownContent content={data.intro} />
-                </p>
+                <MarkdownContent className="text-muted-foreground leading-relaxed" content={data.intro} />
               </section>
 
               <section id="who-is-this-for" className="mb-10">
                 <h2 className="text-xl font-bold text-foreground mb-3 flex items-center gap-2">🎯 Who Is This For?</h2>
                 <Card>
                   <CardContent className="pt-4">
-                    <p className="text-muted-foreground leading-relaxed">
-                      <MarkdownContent content={data.whoIsThis} />
-                    </p>
+                    <MarkdownContent className="text-muted-foreground leading-relaxed" content={data.whoIsThis} />
                   </CardContent>
                 </Card>
               </section>
@@ -144,9 +140,7 @@ export function InfluencerPageLayout({ data }: InfluencerPageLayoutProps) {
                         </CardTitle>
                       </CardHeader>
                       <CardContent className="pt-3 pb-4">
-                        <p className="text-muted-foreground text-sm leading-relaxed">
-                          <MarkdownContent content={step.description} />
-                        </p>
+                        <MarkdownContent className="text-muted-foreground text-sm leading-relaxed" content={step.description} />
                       </CardContent>
                     </Card>
                   ))}

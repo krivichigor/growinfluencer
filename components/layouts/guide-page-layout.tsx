@@ -99,9 +99,7 @@ export function GuidePageLayout({ data }: GuidePageLayoutProps) {
                     {section.emoji} {section.title}
                   </h2>
                   <div className="prose prose-slate max-w-none">
-                    <p className="text-muted-foreground leading-relaxed mb-4">
-                      <MarkdownContent content={section.content} />
-                    </p>
+                    <MarkdownContent className="mb-4 text-muted-foreground leading-relaxed" content={section.content} />
                     {section.steps && (
                       <div className="space-y-4 mt-6">
                         {section.steps.map((step, i) => (
@@ -115,7 +113,7 @@ export function GuidePageLayout({ data }: GuidePageLayoutProps) {
                               </CardTitle>
                             </CardHeader>
                             <CardContent className="pt-4">
-                              <p className="text-muted-foreground"><MarkdownContent content={step.description} /></p>
+                              <MarkdownContent className="text-muted-foreground" content={step.description} />
                             </CardContent>
                           </Card>
                         ))}

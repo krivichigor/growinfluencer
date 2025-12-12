@@ -92,8 +92,8 @@ export function NewsPageLayout({ data }: NewsPageLayoutProps) {
             <main className="lg:col-span-9 order-1 lg:order-2">
               {/* Summary */}
               <section id="summary" className="mb-10">
-                <h2 className="text-xl font-bold text-foreground mb-3 flex items-center gap-2">📋 Summary</h2>
-                <p className="text-muted-foreground leading-relaxed">{data.summary}</p>
+                {/*<h2 className="text-xl font-bold text-foreground mb-3 flex items-center gap-2">📋 Summary</h2>*/}
+                <MarkdownContent className="text-muted-foreground leading-relaxed" content={data.summary} />
               </section>
 
               {/* Dynamic Sections */}
@@ -101,9 +101,7 @@ export function NewsPageLayout({ data }: NewsPageLayoutProps) {
                 <section key={section.id} id={section.id} className="mb-10">
                   <h2 className="text-xl font-bold text-foreground mb-3 flex items-center gap-2">{section.title}</h2>
                   <div className="prose prose-slate max-w-none">
-                    <p className="text-muted-foreground leading-relaxed">
-                      <MarkdownContent content={section.content} />
-                    </p>
+                    <MarkdownContent className="text-muted-foreground leading-relaxed" content={section.content} />
                   </div>
                 </section>
               ))}
