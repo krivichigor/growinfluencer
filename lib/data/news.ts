@@ -24,7 +24,7 @@ export interface NewsArticle {
 export const newsArticles: NewsArticle[] = [
   {
     slug: "game-awards-2025-results-viewership-winners",
-    title: "The Game Awards 2025 Results: Winners, Viewership Breakdown, and What Actually Mattered",
+    title: "The Game Awards 2025 Results: Winners and Viewership",
     category: "Streaming",
     metaTitle: "The Game Awards 2025 Results (TGA 2025): Winners + Viewership Stats Across YouTube, Twitch, Kick",
     metaDesc:
