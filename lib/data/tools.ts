@@ -45,6 +45,157 @@ export interface Tool {
 
 export const tools: Tool[] = [
   {
+    "slug": "escharts",
+    "name": "Esports Charts",
+    "emoji": "🏟️",
+    "category": "Esports Analytics",
+    "shortDesc": "Tournament and esports event viewership analytics: peak viewers, hours watched, platforms, and languages.",
+    "metaTitle": "Esports Charts Review 2025 - Esports Viewership Analytics for Events & Tournaments",
+    "metaDesc": "Esports Charts review for creators and analysts. Track tournament viewership, peak viewers, hours watched, platforms, and regional trends. Learn when Esports Charts is worth it and what to use instead.",
+    "primaryKeyword": "Esports Charts",
+    "secondaryKeywords": [
+      "esports viewership analytics",
+      "tournament peak viewers",
+      "hours watched esports",
+      "CS2 Major viewership",
+      "esports charts review",
+      "event streaming analytics"
+    ],
+    "overview": "Esports Charts is one of the most referenced sources for esports tournament viewership data. It aggregates live-streaming metrics across major platforms and provides event pages with headline KPIs (Peak Viewers, Hours Watched, Average Viewers, Airtime), plus deeper breakdowns depending on the page and access level. For creators, brands, and media, it’s useful for benchmarking how “big” an esports event really is and for comparing tournaments, teams, or eras. The public layer is great for quick references; the deeper insights are typically locked behind paid access.",
+    "features": [
+      {
+        "title": "Event KPIs (Peak, Avg, Hours Watched)",
+        "description": "Quickly capture headline metrics for any tracked tournament: Peak Viewers, Average Viewers, Hours Watched, and Airtime — perfect for news recaps and market comparisons."
+      },
+      {
+        "title": "Match & Stage Breakdown",
+        "description": "Explore which series drove the biggest spikes, how viewership evolves by stage (Swiss, playoffs, finals), and where the tournament’s “attention peaks” happened."
+      },
+      {
+        "title": "Platform Coverage",
+        "description": "Stats are aggregated across multiple streaming platforms, making it easier to discuss cross-platform reach instead of focusing on a single destination."
+      },
+      {
+        "title": "Language & Regional Trends",
+        "description": "When available, see how different language communities contribute to the total audience and how regional broadcasts can change the tournament’s ceiling."
+      },
+      {
+        "title": "Comparisons and Historical Context",
+        "description": "Use tournament pages to compare viewership across years (e.g., previous Majors) and to position an event within a broader esports timeline."
+      },
+      {
+        "title": "Analyst-Friendly Export / Reporting",
+        "description": "Higher tiers typically provide deeper exports, filters, and reporting workflows for agencies, sponsors, and teams."
+      }
+    ],
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0",
+        "features": [
+          "Public event pages with headline KPIs",
+          "Basic tournament browsing",
+          "Limited insights and filters"
+        ]
+      },
+      {
+        "plan": "Premium",
+        "price": "Paid plans (varies)",
+        "features": [
+          "Deeper event insights",
+          "More filters and comparisons",
+          "Additional breakdowns (where available)",
+          "Better exports and reporting"
+        ]
+      },
+      {
+        "plan": "Business / Enterprise",
+        "price": "Custom",
+        "features": [
+          "Team access and advanced analytics",
+          "Custom reporting workflows",
+          "Priority support",
+          "Data use for commercial needs"
+        ]
+      }
+    ],
+    "pros": [
+      "Clear, standardized event KPIs (great for news articles)",
+      "Widely cited across esports media",
+      "Strong tournament discovery and comparison workflows",
+      "Helps explain esports scale to non-esports audiences"
+    ],
+    "cons": [
+      "Many deeper insights and exports are paywalled",
+      "Exact platform/language details vary by event",
+      "Not a replacement for platform-native analytics",
+      "Some metrics can shift while events are live"
+    ],
+    "bestFor": [
+      "Esports journalists and newsletter writers",
+      "Creators covering Majors and large tournaments",
+      "Brands benchmarking esports sponsorship value",
+      "Analysts comparing events year-over-year"
+    ],
+    "competitors": [
+      // {
+      //   "name": "Streamscharts",
+      //   "comparison": "Stronger for streaming ecosystem analytics (channels/categories) and multi-platform streamer-centric views; Esports Charts is more tournament-first."
+      // },
+      // {
+      //   "name": "SullyGnome",
+      //   "comparison": "Twitch-focused stats with deep historical exploration; less tournament-first and less cross-platform tournament framing."
+      // },
+      // {
+      //   "name": "TwitchTracker",
+      //   "comparison": "Great Twitch channel/game graphs; not tournament-centric and typically not cross-platform tournament reporting."
+      // }
+    ],
+    "gettingStarted": [
+      {
+        "step": "1",
+        "title": "Find the event page",
+        "description": "Search the tournament name and open the event statistics page to capture the headline KPIs."
+      },
+      {
+        "step": "2",
+        "title": "Save a live snapshot (if final is ongoing)",
+        "description": "If the event is live, note the timestamp and treat the KPIs as a snapshot; totals can update after the final ends."
+      },
+      {
+        "step": "3",
+        "title": "Compare with previous year",
+        "description": "Open last year’s event page (or a comparable Major) and compare peak + hours watched to explain growth drivers."
+      },
+      {
+        "step": "4",
+        "title": "Add context that non-esports readers understand",
+        "description": "Explain what peak concurrency means, why arenas matter, and how co-streaming/languages shape the result."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Why do Esports Charts numbers change while the event is live?",
+        "answer": "Live pages can refresh as broadcasts continue. After the final ends, totals typically settle and match rankings can lock in."
+      },
+      {
+        "question": "Is Esports Charts the same as platform-native analytics?",
+        "answer": "No. Esports Charts is best for benchmarking and comparisons; platform-native dashboards remain the source for your own channel’s exact performance."
+      },
+      {
+        "question": "Can I use Esports Charts data in articles?",
+        "answer": "For editorial use, the public KPIs are commonly referenced with attribution. For commercial use or deep exports, paid access is typically required."
+      }
+    ],
+    "relatedInfluencers": ["twitch-streamer", "gamer-creator", "youtuber"],
+    "relatedTools": [
+        // "streamscharts", "socialblade", "twitchtracker", "sullygnome"
+    ],
+    "websiteUrl": "https://escharts.com",
+    "rating": 4.7,
+    "ratingCount": 5200
+  },
+  {
     slug: "hootsuite",
     name: "Hootsuite",
     emoji: "🦉",

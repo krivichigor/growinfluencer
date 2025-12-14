@@ -18,6 +18,8 @@ export function NewsPageLayout({ data }: NewsPageLayoutProps) {
   const tocItems = [
     { id: "summary", title: "Summary", level: 2 },
     ...data.sections.map((s) => ({ id: s.id, title: s.title, level: 2 })),
+    ...(data.didYouKnow ? [{ id: "did-you-know", title: "Did You Know?", level: 2 }] : []),
+    ...(data.whatToWatchNext ? [{ id: "what-to-watch-next", title: data.whatToWatchNext.title, level: 2 }] : []),
     { id: "why-care", title: "Why Influencers Should Care", level: 2 },
     { id: "action-steps", title: "Action Steps", level: 2 },
     { id: "related", title: "Related Content", level: 2 },
@@ -80,6 +82,8 @@ export function NewsPageLayout({ data }: NewsPageLayoutProps) {
           </div>
         </section>
 
+
+
         {/* Content */}
         <div className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -96,6 +100,30 @@ export function NewsPageLayout({ data }: NewsPageLayoutProps) {
                 <MarkdownContent className="text-muted-foreground leading-relaxed" content={data.summary} />
               </section>
 
+              {/* Did You Know */}
+              {data.didYouKnow && (
+                  <section id="did-you-know" className="mb-10">
+                    <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">💡 Did You Know?</h2>
+                    <div className="space-y-3">
+
+                      <Card>
+                        <CardContent className="pt-4 pb-4">
+                          <ul className="space-y-3">
+                          {data.didYouKnow.map((fact,i ) => (
+                              <li key={i} className="flex items-start gap-3">
+                                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-emerald-500 to-teal-500 text-white text-xs font-bold mt-0.5">
+                                  {i + 1}
+                                </span>
+                                <span className="text-foreground text-sm leading-relaxed pt-0.5">{fact}</span>
+                              </li>
+                          ))}
+                          </ul>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </section>
+              )}
+
               {/* Dynamic Sections */}
               {data.sections.map((section) => (
                 <section key={section.id} id={section.id} className="mb-10">
@@ -105,6 +133,28 @@ export function NewsPageLayout({ data }: NewsPageLayoutProps) {
                   </div>
                 </section>
               ))}
+
+
+              {/* What to Watch Next */}
+              {data.whatToWatchNext && (
+                <section id="what-to-watch-next" className="mb-10">
+                  <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">👀 {data.whatToWatchNext.title}</h2>
+                  <Card>
+                    <CardContent className="pt-6 pb-6">
+                      <ul className="space-y-3">
+                        {data.whatToWatchNext.bullets.map((bullet, i) => (
+                          <li key={i} className="flex items-start gap-3">
+                            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-emerald-500 to-teal-500 text-white text-xs font-bold mt-0.5">
+                              {i + 1}
+                            </span>
+                            <span className="text-foreground text-sm leading-relaxed pt-0.5">{bullet}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </section>
+              )}
 
               {/* Why Care */}
               <section id="why-care" className="mb-10">

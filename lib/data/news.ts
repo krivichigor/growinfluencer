@@ -16,12 +16,152 @@ export interface NewsArticle {
     title: string
     content: string
   }[]
+  didYouKnow?: string[]
+  whatToWatchNext?: {
+    title: string
+    bullets: string[]
+  }
   whyCare: string[]
   actionSteps: { title: string; description: string }[]
   relatedContent: { title: string; slug: string; href: string }[]
 }
 
 export const newsArticles: NewsArticle[] = [
+  {
+    "slug": "starladder-budapest-major-2025-viewership-results-live-final",
+    "title": "StarLadder Budapest Major 2025 Viewership: Live Final Numbers, What’s Driving Them, and Why This CS2 Major Matters",
+    "category": "Esports",
+    "metaTitle": "StarLadder Budapest Major 2025 Viewership (Live Final) + Results Update — CS2 Major Stats, Stadium Scale, and 2024 Comparison",
+    "metaDesc": "Live snapshot of StarLadder Budapest Major 2025 viewership during the Grand Final (FaZe vs Vitality): peak viewers, hours watched, average viewers, and what’s behind the surge. Includes 2024 Major comparison and why stadium esports is mainstream entertainment now.",
+    "primaryKeyword": "StarLadder Budapest Major 2025 viewership",
+    "secondaryKeywords": [
+      "CS2 Major Budapest 2025",
+      "StarLadder Major 2025 peak viewers",
+      "FaZe vs Vitality Grand Final",
+      "CS2 Major hours watched",
+      "MVM Dome esports arena",
+      "Perfect World Shanghai Major 2024 viewership comparison",
+      "PGL Copenhagen Major 2024 viewership comparison",
+      "co-streaming Counter-Strike Major",
+      "esports stadium event Budapest"
+    ],
+    "excerpt": "The StarLadder Budapest Major 2025 isn’t just a Counter-Strike tournament — it’s a stadium-scale media moment. Here’s what the live viewership looks like during the Grand Final (so far), how it compares with last year, and why even non-esports fans should pay attention.",
+    "summary": "StarLadder Budapest Major 2025 has surged into “mainstream appointment viewing” territory — and you can see it in the live counters: peak concurrency in the 1.4M range during the Grand Final window, tens of millions of hours watched already, and a venue built for 20,000 people at playoff scale. \n\nThis article breaks down the viewership snapshot available right now, explains why the final audience isn’t finished yet (the Grand Final is still in progress), and connects the dots: why language communities matter, how co-streaming changes the shape of peaks, why arenas like Budapest’s MVM Dome turn esports into a city-level event, and how this Major compares to 2024’s Shanghai Major and the record-setting Copenhagen Major.\n\nIf you’re a creator, a marketer, a platform PM, or just someone wondering “why is a shooter filling stadiums?”, this is the cleanest way to understand what’s happening — without the esports jargon.",
+    "readingTime": 18,
+    "datePublished": "2025-12-14",
+    "dateModified": "2025-12-14",
+    "overview": "Live during the Grand Final, StarLadder Budapest Major 2025 is already posting peak viewership around ~1.48M and hours watched in the ~65M–68M range (depending on the live refresh moment). The Grand Final is ongoing, so the final ‘event total’ will update after the last map ends.",
+    "didYouKnow": [
+      "Budapest’s Major broke Hungary’s all-time esports viewership record on Day 1, with opening matches surpassing 407K peak viewers.",
+      "A Falcons vs Spirit playoff quarterfinal crossed 1,000,000 concurrent viewers and even hit ~1.19M during map one.",
+      "Stage 2 saw Turkish and Ukrainian broadcasts jump sharply — driven by matches featuring NAVI and Aurora Gaming.",
+      "Even ‘non-final’ Swiss-stage matches cleared 500K+ peak viewers when the right teams and storylines collided."
+    ],
+    "whatToWatchNext": {
+      "title": "After the Grand Final: what will change in the numbers",
+      "bullets": [
+        "Peak Viewers may tick upward if the series goes long or ends with a high-drama final map.",
+        "Hours Watched and Average Viewers will keep moving until every official stream and co-stream VOD window settles.",
+        "The ‘most watched match’ leaderboard can flip late — a single overtime-heavy map can change the whole event ranking.",
+        "Post-event reporting will clarify which languages and platforms contributed the most to the final peak."
+      ]
+    },
+    "sections": [
+      {
+        "id": "live-snapshot",
+        "title": "Live Snapshot: Viewership So Far",
+        "content": "StarLadder Budapest Major 2025 is currently in the “this is bigger than esports” zone — not as a slogan, but as a measurable broadcast reality.\n\nBelow is a **live snapshot** taken during the Grand Final window from the public counters visible on Esports Charts :\n\n| Metric | Live snapshot (during Grand Final window) |\n|---|---:|\n| Peak Viewers | **1,481,472** |\n| Hours Watched | **68,185,956** |\n| Average Viewers | **504,770** |\n| Airtime | **135h 5m** |\n\nBecause the event is still live, these numbers are *moving targets*. Esports Charts’ public event page also refreshes as the broadcast continues; depending on when you load it, the rolling totals can display slightly lower/higher than a screenshot captured minutes earlier.\n\nIf you want to explore the live tracker directly, here’s the source page:\n\n- [Esports Charts — StarLadder Budapest Major 2025 stats](https://escharts.com/tournaments/csgo/cs2-major-championship-winter-2025-csgo)\n\nAnd if you’re not deep into esports analytics, here’s the simplest interpretation:\n\n- **Peak Viewers** tells you how many people were watching *at the same moment*.\n- **Hours Watched** tells you how much total time audiences collectively spent on the event.\n- **Average Viewers** is “how big the room felt” across the whole broadcast.\n\nThose three, together, are what separate “a popular match” from “a global media event.”\n\nInternal note for creators and marketers: if you’re trying to sanity-check *your own* tentpole moments, don’t guess — benchmark engagement around spikes using the [Engagement Rate Calculator](/calculators/engagement-rate)."
+      },
+      {
+        "id": "results-and-final-viewership",
+        "title": "Results and Final Viewership",
+        "content": "### Where we are right now\nAt the time of writing, **the Grand Final is live** and the matchup on the broadcast is **FaZe vs Vitality** — and the series is still ongoing. Data shows it in a tight state (1–1 at that moment), which is exactly the kind of situation that keeps casual viewers from clicking away.\n\n### What this means for the numbers\nBecause the Grand Final hasn’t finished yet, **the final viewership totals are not “final”** either:\n\n- If the series goes long (extra maps, overtimes, momentum swings), **Hours Watched** and **Average Viewers** tend to climb.\n- If the last map becomes a “you had to be there” classic, **Peak Viewers** can still jump at the very end.\n\nSo treat today’s numbers as a **live score**, not a season recap. After the final map ends, [Esports Charts](/tools/escharts) will settle the event totals and the “most watched match” rankings will lock in.\n\nIf you want a practical way to follow the ripple effects of a big final (clips, co-stream spikes, next-day VOD traffic), start with your workflow fundamentals: [How to Create a Content Calendar](/guides/how-to-create-content-calendar). Majors don’t just create one night of attention — they create a week of opportunity."
+      },
+      {
+        "id": "why-it-matters-non-esports",
+        "title": "Why This Major Matters (Even If You Don’t Watch Esports)",
+        "content": "It’s easy to dismiss esports as “people playing games on the internet” — until you see the scale that events like the Budapest Major operate at.\n\nThis Major is built around **two physical realities**:\n\n1) **A real venue with real seats.** The playoffs are designed for Budapest’s **MVM Dome**, a large indoor arena built for **20,000 spectators** — not a studio with folding chairs. That physical capacity is the difference between “a niche convention” and “a city-level event.”\n\n2) **A real broadcast machine.** Majors don’t succeed because one stream exists. They succeed because a global distribution network exists: official broadcasts, regional language feeds, co-streams, VODs, highlights, and social clipping.\n\nIf you’re not into Counter-Strike, here are three reasons it still matters:\n\n- **It’s a new category of stadium entertainment.** The same way boxing, MMA, or a concert can be “big night in town,” a Major can now fill arenas and pull global concurrency.\n- **It’s a proof point for how modern attention works.** The audience isn’t just watching — it’s remixing, reacting, and redistributing through creators.\n- **It’s a business signal.** When you can move 1M+ live viewers for a match, you’re in the realm where sponsors, platforms, and cities pay attention.\n\nIf you’re coming from the creator economy side, think of a Major like a global ‘content holiday’. It creates repeatable formats: previews, watch parties, explainers, highlight breakdowns, memes, and sponsor-friendly segments — especially for a [Twitch Streamer Guide](/influencers/twitch-streamer) audience that thrives on live communal moments."
+      },
+      {
+        "id": "stadium-scale-budapest",
+        "title": "Budapest: From ‘Host City’ to ‘Event Character’",
+        "content": "Budapest isn’t just where the Major happens — it’s part of why the Major feels *big*.\n\nAccording to event coverage and venue details, the tournament uses **MTK Sportpark** for earlier stages and **MVM Dome** for playoffs, with the MVM Dome positioned as a full-scale arena experience (and referenced as a 20,000-seat venue in multiple reports).\n\nThis is more than trivia. The venue changes the show:\n\n- Crowd audio changes pacing: you feel momentum swings more clearly.\n- Camera language changes: wide shots, stage reveals, player walks, arena light effects.\n- Narrative becomes physical: “the pressure” isn’t metaphorical when the crowd is right there.\n\nStarLadder’s own communications positioned the MVM Dome as a stadium-scale production setting — emphasizing capacity and modern arena production capabilities.\n\nFor anyone who cares about *why* esports is now mainstream entertainment, this is the heart of it: the format has matured into something that looks and feels like major-league live events.\n\nExternal references:\n\n- [StarLadder announcement (MVM Dome, 20,000 seats)](https://major.starladder.com/en/news/starladder-to-host-2025-cs2-major-in-budapest-s-20-000-seat-mvm-dome)\n- [HLTV event guide (format, schedule, venue context)](https://www.hltv.org/news/43232/starladder-budapest-major-teams-format-schedule-prizes-talent-fantasy)"
+      },
+      {
+        "id": "what-drove-viewership",
+        "title": "What’s Driving the Viewership Spike",
+        "content": "Big Majors don’t grow from one cause. They grow when multiple forces stack:\n\n### 1) The Major format creates constant stakes\nSwiss stages keep match relevance high: every round can turn into an elimination or qualification moment. That structure tends to produce more “must-watch” blocks than a simple group stage.\n\n### 2) Co-streaming turns one broadcast into thousands of entry points\nEven without paywalled co-stream metrics, you can see the shape: popular creators bring their communities, translate the story in their own language, and turn a match into a social event.\n\n### 3) Regional language surges are real growth, not noise\nEsports Charts reporting during Stage 2 noted **significant growth** in Turkish and Ukrainian broadcasts compared to Stage 1, tied to matches featuring teams with strong regional pull (like NAVI and Aurora Gaming). That’s not just “nice to have” — it’s incremental audience.\n\n### 4) The playoffs create the cleanest narrative arc\nOnce you hit playoffs, casual viewers understand the story instantly:\n\n- lose and you’re out\n- win and you advance\n- win the final and you’re immortal (at least until next Major)\n\nAnd the data points back up the idea that playoffs are a viewership accelerator: Esports Charts reported that the Major crossed **1,000,000 concurrent viewers** during a Falcons vs Spirit quarterfinal, and even reached around **1.19M** during map one.\n\nIn other words: the event didn’t just peak at the end. It already proved it can break seven figures before the trophy moment."
+      },
+      {
+        "id": "comparison-2024",
+        "title": "How It Compares to Last Year",
+        "content": "To compare apples to apples, it helps to anchor on Esports Charts’ public tournament stats pages.\n\nHere’s a clean table using the **finalized** numbers from 2024’s Shanghai Major, plus Copenhagen 2024 for broader context, alongside Budapest 2025’s current live snapshot.\n\n| Major | Peak Viewers | Hours Watched | Avg Viewers | Airtime |\n|---|---:|---:|---:|---:|\n| **StarLadder Budapest Major 2025** (live, in-progress) | 1,481,472 | 68,185,956 | 504,770 | 135h 5m |\n| Perfect World Shanghai Major 2024 (final) | 1,329,860 | 32,800,353 | 316,403 | 104h |\n| PGL Major Copenhagen 2024 (final) | 1,853,954 | 58,259,500 | 552,223 | 106h |\n\nWhat the comparison suggests (with one important caveat: **Budapest 2025 is still live**):\n\n- Versus **Shanghai 2024**, Budapest is already **higher on peak** and dramatically higher on total consumption (hours watched). Shanghai’s scheduling also faced time-zone friction for parts of the Western audience, and some reporting noted that the headline number did not include Chinese viewership.\n- Versus **Copenhagen 2024**, Budapest is currently **lower on peak** but already **higher on hours watched** — largely because Budapest’s total airtime is much larger and the event has sustained attention across more broadcast time.\n\nIf you want the one-sentence takeaway:\n\n**Shanghai looked like a Major that peaked hard; Budapest looks like a Major that lived longer — and still peaks hard.**\n\nAnd from a creator/brand angle, that “lived longer” part matters. It means more slots for content, more sponsor inventory, and more ways for audiences to discover the event through personalities.\n\nInternal link if you’re building coverage: [Best Equipment for Beginners](/guides/best-equipment-for-beginners) — because if you’re going to co-stream a Major, your audio and lighting quality matter more than your overlay."
+      },
+      {
+        "id": "broadcast-nuances",
+        "title": "Broadcast Nuances People Miss",
+        "content": "When viewership hits this level, it’s rarely “because Counter-Strike is popular” in the abstract. It’s because the broadcast ecosystem is working.\n\nHere are a few nuance points that help explain why the Budapest Major feels huge:\n\n### Language is a growth engine\nStage 2 coverage highlighted that Turkish and Ukrainian broadcasts rose sharply compared to Stage 1 — and that shift happened because specific teams activated specific audiences.\n\nThat is exactly how Majors grow year over year: not by converting everyone, but by **adding communities**.\n\n### Co-streamers change peak shape\nA centralized official broadcast tends to produce one towering peak. A co-stream ecosystem produces “distributed peaks” — smaller spikes across many channels that can collectively rival or exceed the official stream’s impact.\n\n### Match identity matters\nEsports Charts’ Stage 2 recap called out that even Swiss-stage matches (like FaZe vs NiP) could pull 500K+ concurrency when the narrative was right.\n\nThat’s the hidden truth of viewership: teams are brands, storylines are content, and matches are episodes.\n\nIf you want to benchmark co-stream performance in a more creator-focused way, the best companion tool is [Streamscharts](/tools/streamscharts) — it’s the fastest way to contextualize streamer-driven distribution around tentpole events."
+      },
+      {
+        "id": "why-stadium-esports-is-here",
+        "title": "Why Stadium Esports Is Not a Fad",
+        "content": "A Major in a 20,000-seat arena isn’t a gimmick. It’s a signal that a new kind of live entertainment has stabilized.\n\nTo understand why, compare it to other large events:\n\n- Sports: you buy a ticket for the atmosphere and the shared moment.\n- Concerts: you buy a ticket for proximity to something cultural.\n- Esports Majors: you buy a ticket for the same reasons — and because you can’t replicate “the arena moment” through a VOD.\n\nAnd unlike many entertainment products, esports has a built-in global layer:\n\n- the arena audience is one multiplier\n- the live broadcast is a second multiplier\n- and co-streaming personalities are a third multiplier\n\nThat stack makes events resilient.\n\nSo even if someone never watches Counter-Strike again, they can still understand what a Major represents:\n\nIt’s proof that digital-native culture can fill real buildings — and pull global attention at the same time."
+      },
+      {
+        "id": "practical-takeaways",
+        "title": "Takeaways for Creators, Brands, and Platforms",
+        "content": "### For creators\nMajors are a repeatable playbook:\n\n- pre-final: “what to watch for” primers\n- during final: watch party + clip pipeline\n- post-final: explainers, best moments, player/team story summaries\n\nIf you want to do it sustainably, you need a schedule. Start here: [How to Create a Content Calendar](/guides/how-to-create-content-calendar).\n\n### For brands\nA Major is not “one stream.” It’s an ecosystem: official feeds + languages + co-streamers + highlights. The best brand activations are the ones that still make sense in a 20-second clip.\n\n### For platforms\nLive is not just live. It’s live + replay + discovery. YouTube and Twitch play different roles, and Majors benefit from both.\n\nAnd for everyone: if you ever wondered whether esports is ‘real’ in the mainstream sense — a Major in a packed arena with 1M+ online peaks is your answer."
+      }
+    ],
+    "whyCare": [
+      "This Major is already delivering peak concurrency in the ~1.48M range during the Grand Final window — a mainstream-scale live event.",
+      "Budapest’s playoff arena (MVM Dome) is built for 20,000 spectators, showing how esports has moved beyond studio broadcasts.",
+      "Regional language growth (e.g., Ukrainian and Turkish surges in Stage 2) demonstrates how Majors expand audiences year over year.",
+      "The playoffs can shift final totals dramatically — a single high-drama last map can set the event’s final peak.",
+      "Comparing Budapest 2025 with Shanghai 2024 and Copenhagen 2024 reveals whether this Major is winning through peaks, longevity, or both."
+    ],
+    "actionSteps": [
+      {
+        "title": "Treat the final as a live data moment",
+        "description": "Capture a screenshot and a link timestamp now, then check again after the last map ends to see how much the ‘ending spike’ changed Peak Viewers and Hours Watched."
+      },
+      {
+        "title": "If you co-stream, plan the last-map sprint",
+        "description": "Have your clip titles and segment beats ready before map 5/decider starts. Peaks convert best when your output is immediate."
+      },
+      {
+        "title": "Use last year as your baseline",
+        "description": "Compare your coverage performance against Shanghai 2024 (Dec Major) to understand whether your audience prefers ‘holiday season’ esports or spring Majors."
+      },
+      {
+        "title": "Translate the event for non-esports friends",
+        "description": "Lead with the stadium fact and the peak concurrency number. It’s the quickest bridge from ‘games’ to ‘live entertainment’."
+      }
+    ],
+    "relatedContent": [
+      {
+        "title": "Streamscharts Review",
+        "slug": "streamscharts",
+        "href": "/tools/streamscharts"
+      },
+      {
+        "title": "Engagement Rate Calculator",
+        "slug": "engagement-rate",
+        "href": "/calculators/engagement-rate"
+      },
+      {
+        "title": "How to Create a Content Calendar",
+        "slug": "how-to-create-content-calendar",
+        "href": "/guides/how-to-create-content-calendar"
+      },
+      {
+        "title": "Twitch Streamer Guide",
+        "slug": "twitch-streamer",
+        "href": "/influencers/twitch-streamer"
+      }
+    ]
+  },
+
   {
     slug: "game-awards-2025-results-viewership-winners",
     title: "The Game Awards 2025 Results: Winners and Viewership",
