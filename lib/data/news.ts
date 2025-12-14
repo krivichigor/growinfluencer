@@ -70,7 +70,7 @@ export const newsArticles: NewsArticle[] = [
       {
         "id": "live-snapshot",
         "title": "Final Snapshot: Viewership Numbers",
-        "content": "StarLadder Budapest Major 2025 is no longer a live counter — it’s a finished case study in how big Counter-Strike can get when the final is staged like a major-league event.\n\nHere are the final numbers you provided (captured after the tournament concluded at **21:00 GMT+0**):\n\n| Metric | Final tournament snapshot |\n|---|---:|\n| Peak Viewers | **1 544 419** |\n| Peak moment | **20:05 during the Grand Final** |\n| Hours Watched | **71 139 208** |\n| Average Viewers | **518 319** |\n| Airtime | **137h 5m** |\n\nA practical interpretation (for readers who don’t live inside dashboards):\n\n- **Peak Viewers** is the “how many people were in the stadium at once” number — but for the internet.\n- **Hours Watched** is the “how long did the world stay with this story” number.\n- **Average Viewers** is the “how big was the room most of the time” number.\n\nIf you want to verify or track any late post-event adjustments, the public tournament page is here:\n\n- <a href=\"https://escharts.com/tournaments/csgo/cs2-major-championship-winter-2025-csgo\" rel=\"nofollow noopener noreferrer\">Esports Charts — StarLadder Budapest Major 2025 stats</a>\n\nInternal note for creators and marketers: when you benchmark your own tentpole moments, measure them the way events do: peak, average, and total watch time. A quick helper is the [Engagement Rate Calculator](/calculators/engagement-rate)."
+        "content": "StarLadder Budapest Major 2025 is no longer a live counter — it’s a finished case study in how big Counter-Strike can get when the final is staged like a major-league event.\n\nHere are the final numbers you provided (captured after the tournament concluded at **21:00 GMT+0**):\n\n| Metric | Final tournament snapshot |\n|---|---:|\n| Peak Viewers | **1 544 419** |\n| Peak moment | **20:05 during the Grand Final** |\n| Hours Watched | **71 139 208** |\n| Average Viewers | **518 319** |\n| Airtime | **137h 5m** |\n\nA practical interpretation (for readers who don’t live inside dashboards):\n\n- **Peak Viewers** is the “how many people were in the stadium at once” number — but for the internet.\n- **Hours Watched** is the “how long did the world stay with this story” number.\n- **Average Viewers** is the “how big was the room most of the time” number.\n\nIf you want to verify or track any late post-event adjustments, the public tournament page is here:\n\n- [Esports Charts — StarLadder Budapest Major 2025 stats](https://escharts.com/tournaments/csgo/cs2-major-championship-winter-2025-csgo)\n\nInternal note for creators and marketers: when you benchmark your own tentpole moments, measure them the way events do: peak, average, and total watch time. A quick helper is the [Engagement Rate Calculator](/calculators/engagement-rate)."
       },
       {
         "id": "results-and-final-viewership",
@@ -85,7 +85,7 @@ export const newsArticles: NewsArticle[] = [
       {
         "id": "stadium-scale-budapest",
         "title": "Budapest as a Stadium Event",
-        "content": "Budapest didn’t just host a tournament — it hosted a **live entertainment product**.\n\nThe venue layer changes how the event feels:\n\n- Crowd audio makes momentum swings obvious even to casual viewers.\n- Camera direction becomes “arena language”: wide shots, player walks, stage reveals.\n- Pressure becomes physical: it’s different to play when your mistakes have an immediate crowd reaction.\n\nIf you want the official and competitive context:\n\n- <a href=\"https://major.starladder.com/en/news/starladder-to-host-2025-cs2-major-in-budapest-s-20-000-seat-mvm-dome\" rel=\"nofollow noopener noreferrer\">StarLadder announcement (MVM Dome, 20,000 seats)</a>\n- <a href=\"https://www.hltv.org/news/43232/starladder-budapest-major-teams-format-schedule-prizes-talent-fantasy\" rel=\"nofollow noopener noreferrer\">HLTV event guide (format, schedule, overview)</a>\n\nThe bigger point: once you put esports into a modern arena and execute a final with real production values, you remove the last barrier for mainstream viewers. They don’t need to understand every mechanic. They just need to feel the moment."
+        "content": "Budapest didn’t just host a tournament — it hosted a **live entertainment product**.\n\nThe venue layer changes how the event feels:\n\n- Crowd audio makes momentum swings obvious even to casual viewers.\n- Camera direction becomes “arena language”: wide shots, player walks, stage reveals.\n- Pressure becomes physical: it’s different to play when your mistakes have an immediate crowd reaction.\n\nIf you want the official and competitive context:\n\n- [StarLadder announcement (MVM Dome, 20,000 seats)](https://major.starladder.com/en/news/starladder-to-host-2025-cs2-major-in-budapest-s-20-000-seat-mvm-dome)\n- [HLTV event guide (format, schedule, overview)](https://www.hltv.org/news/43232/starladder-budapest-major-teams-format-schedule-prizes-talent-fantasy)\n\nThe bigger point: once you put esports into a modern arena and execute a final with real production values, you remove the last barrier for mainstream viewers. They don’t need to understand every mechanic. They just need to feel the moment."
       },
       {
         "id": "what-drove-viewership",
@@ -121,22 +121,22 @@ export const newsArticles: NewsArticle[] = [
       "Comparing Budapest 2025 with Shanghai 2024 and Copenhagen 2024 clarifies whether growth came from peaks, longevity, or both."
     ],
     "actionSteps": [
-      {
-        "title": "Update your headline numbers everywhere",
-        "description": "Replace any “live snapshot” stats with the final KPI set: Peak 1 544 419; Hours 71 139 208; Avg 518 319; Airtime 137h 5m; peak moment 20:05; end 21:00 GMT+0."
-      },
-      {
-        "title": "Keep a post-event correction note",
-        "description": "Even after an event ends, totals can shift slightly. Add a short line: “Stats may be adjusted; we’re tracking Esports Charts.”"
-      },
-      {
-        "title": "Publish a ‘what changed’ follow-up",
-        "description": "Write a second piece focused on impacts: what this Major means for CS2’s event calendar, co-streaming culture, and stadium viability."
-      },
-      {
-        "title": "Turn the final into evergreen content",
-        "description": "Convert the final story into timeless formats: ‘How Majors work’, ‘Why peaks happen’, and ‘What a 1.5M moment means for brands’ — then internally link across your Guides/Tools pages."
-      }
+      // {
+      //   "title": "Update your headline numbers everywhere",
+      //   "description": "Replace any “live snapshot” stats with the final KPI set: Peak 1 544 419; Hours 71 139 208; Avg 518 319; Airtime 137h 5m; peak moment 20:05; end 21:00 GMT+0."
+      // },
+      // {
+      //   "title": "Keep a post-event correction note",
+      //   "description": "Even after an event ends, totals can shift slightly. Add a short line: “Stats may be adjusted; we’re tracking Esports Charts.”"
+      // },
+      // {
+      //   "title": "Publish a ‘what changed’ follow-up",
+      //   "description": "Write a second piece focused on impacts: what this Major means for CS2’s event calendar, co-streaming culture, and stadium viability."
+      // },
+      // {
+      //   "title": "Turn the final into evergreen content",
+      //   "description": "Convert the final story into timeless formats: ‘How Majors work’, ‘Why peaks happen’, and ‘What a 1.5M moment means for brands’ — then internally link across your Guides/Tools pages."
+      // }
     ],
     "relatedContent": [
       {
