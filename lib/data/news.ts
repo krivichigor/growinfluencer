@@ -121,22 +121,22 @@ export const newsArticles: NewsArticle[] = [
       "Comparing Budapest 2025 with Shanghai 2024 and Copenhagen 2024 reveals whether this Major is winning through peaks, longevity, or both."
     ],
     "actionSteps": [
-      {
-        "title": "Treat the final as a live data moment",
-        "description": "Capture a screenshot and a link timestamp now, then check again after the last map ends to see how much the ‘ending spike’ changed Peak Viewers and Hours Watched."
-      },
-      {
-        "title": "If you co-stream, plan the last-map sprint",
-        "description": "Have your clip titles and segment beats ready before map 5/decider starts. Peaks convert best when your output is immediate."
-      },
-      {
-        "title": "Use last year as your baseline",
-        "description": "Compare your coverage performance against Shanghai 2024 (Dec Major) to understand whether your audience prefers ‘holiday season’ esports or spring Majors."
-      },
-      {
-        "title": "Translate the event for non-esports friends",
-        "description": "Lead with the stadium fact and the peak concurrency number. It’s the quickest bridge from ‘games’ to ‘live entertainment’."
-      }
+      // {
+      //   "title": "Treat the final as a live data moment",
+      //   "description": "Capture a screenshot and a link timestamp now, then check again after the last map ends to see how much the ‘ending spike’ changed Peak Viewers and Hours Watched."
+      // },
+      // {
+      //   "title": "If you co-stream, plan the last-map sprint",
+      //   "description": "Have your clip titles and segment beats ready before map 5/decider starts. Peaks convert best when your output is immediate."
+      // },
+      // {
+      //   "title": "Use last year as your baseline",
+      //   "description": "Compare your coverage performance against Shanghai 2024 (Dec Major) to understand whether your audience prefers ‘holiday season’ esports or spring Majors."
+      // },
+      // {
+      //   "title": "Translate the event for non-esports friends",
+      //   "description": "Lead with the stadium fact and the peak concurrency number. It’s the quickest bridge from ‘games’ to ‘live entertainment’."
+      // }
     ],
     "relatedContent": [
       {
