@@ -140,9 +140,9 @@ export const newsArticles: NewsArticle[] = [
     ],
     "relatedContent": [
       {
-        "title": "Streamscharts Review",
-        "slug": "streamscharts",
-        "href": "/tools/streamscharts"
+        "title": "Escharts Review",
+        "slug": "escharts",
+        "href": "/tools/escharts"
       },
       {
         "title": "Engagement Rate Calculator",
